@@ -1,0 +1,152 @@
+section .data
+    msg_yes       db 'ARITHMETIC PROGRESSION', 10, 0
+    msg_no        db 'NOT ARITHMETIC PROGRESSION', 10, 0
+    msg_array     db 'Array: ', 0
+    msg_newline   db 10, 0
+    space         db ' ', 0
+    fmt_int       db '%d', 0
+    fmt_scan      db '%d', 0          ; format for scanf
+
+section .bss
+    array_size    resd 1
+    my_array      resd 50             ; max 50 elements
+
+section .text
+    global main
+    extern printf, scanf
+
+main:
+    push ebp
+    mov ebp, esp
+
+    ; --- Read array size ---
+    push msg_newline
+    call printf
+    add esp, 4
+
+    lea eax, [array_size]
+    push eax
+    push fmt_scan
+    call scanf
+    add esp, 8
+
+    ; --- Read array elements ---
+    mov ecx, [array_size]    ; number of elements
+    xor esi, esi             ; index = 0
+
+read_loop:
+    lea eax, [my_array + esi*4]
+    push eax
+    push fmt_scan
+    call scanf
+    add esp, 8
+    inc esi
+    loop read_loop
+
+    ; --- Print array ---
+    push msg_array
+    call printf
+    add esp, 4
+
+    mov ecx, [array_size]
+    xor esi, esi
+
+print_loop:
+    mov eax, [my_array + esi*4]
+    push eax
+    push fmt_int
+    call printf
+    add esp, 8
+
+    push space
+    call printf
+    add esp, 4
+
+    inc esi
+    loop print_loop
+
+    push msg_newline
+    call printf
+    add esp, 4
+
+    ; --- Check arithmetic progression ---
+    push dword [array_size]
+    push my_array
+    call check_arithmetic_progression
+    add esp, 8
+
+    cmp eax, 1
+    je is_progression
+
+    push msg_no
+    call printf
+    add esp, 4
+    jmp end_program
+
+is_progression:
+    push msg_yes
+    call printf
+    add esp, 4
+
+end_program:
+    push msg_newline
+    call printf
+    add esp, 4
+
+    mov eax, 0
+    leave
+    ret
+
+; --- Subroutine: check arithmetic progression ---
+; Parameters:
+;   [esp+4] -> pointer to array
+;   [esp+8] -> array size
+; Returns:
+;   EAX = 1 if arithmetic progression, 0 otherwise
+check_arithmetic_progression:
+    push ebp
+    mov ebp, esp
+    push ebx
+    push ecx
+    push edx
+    push esi
+    push edi
+
+    mov esi, [ebp + 8]     ; pointer to array
+    mov ecx, [ebp + 12]    ; size
+
+    cmp ecx, 2
+    jl .not_progression
+
+    ; common difference = arr[1] - arr[0]
+    mov eax, [esi + 4]
+    sub eax, [esi]
+
+    mov edx, esi
+    add edx, 8
+    mov ecx, [ebp + 12]
+    sub ecx, 2
+
+.check_loop:
+    mov ebx, [edx - 4]
+    mov edi, [edx]
+    sub edi, ebx
+    cmp edi, eax
+    jne .not_progression
+    add edx, 4
+    loop .check_loop
+
+    mov eax, 1
+    jmp .done
+
+.not_progression:
+    mov eax, 0
+
+.done:
+    pop edi
+    pop esi
+    pop edx
+    pop ecx
+    pop ebx
+    leave
+    ret
