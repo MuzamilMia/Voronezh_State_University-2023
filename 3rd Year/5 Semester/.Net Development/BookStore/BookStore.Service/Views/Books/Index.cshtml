@@ -1,0 +1,47 @@
+﻿@model IEnumerable<BookStore.BL.Books.Entities.BookBL>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<h2>Books from PostgreSQL (via BL)</h2>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-success">
+        <p> No books yet. <a asp-action="Create" class="btn btn-success">➕ Add New Book</a></p>
+    </div>
+}
+else
+{
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-success">➕ Add New Book</a>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Author</td>
+                    <td>@book.Price C</td>
+                    <td>@book.Quantity</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@book.BookId" class="btn btn-sm btn-warning">Edit</a>
+                        <a asp-action="Details" asp-route-id="@book.BookId" class="btn btn-sm btn-info">Details</a>
+                        <a asp-action="Delete" asp-route-id="@book.BookId" class="btn btn-sm btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

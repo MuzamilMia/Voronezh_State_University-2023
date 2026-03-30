@@ -1,0 +1,29 @@
+D:\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.deps.json
+D:\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.runtimeconfig.json
+D:\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.dll
+D:\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.pdb
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.csproj.AssemblyReference.cache
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.AssemblyInfoInputs.cache
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.AssemblyInfo.cs
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.csproj.CoreCompileInputs.cache
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.dll
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\refint\BookStore.DataAccess.dll
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.pdb
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.genruntimeconfig.cache
+D:\BookStore\BookStore.DataAccess\obj\Debug\net8.0\ref\BookStore.DataAccess.dll
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.deps.json
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.runtimeconfig.json
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.dll
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\bin\Debug\net8.0\BookStore.DataAccess.pdb
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.AssemblyInfo.cs
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.sourcelink.json
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.dll
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\refint\BookStore.DataAccess.dll
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.pdb
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\BookStore.DataAccess.genruntimeconfig.cache
+C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.DataAccess\obj\Debug\net8.0\ref\BookStore.DataAccess.dll
