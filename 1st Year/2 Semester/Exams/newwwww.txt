@@ -1,0 +1,272 @@
+First number. 
+
+//first 5. 
+//Elements in non Even position. 
+//ptrnode copy(const ptrnode ptr)
+//{
+//	ptrnode result = nullptr;
+//	if (ptr)
+//		result = new NODE(ptr->elem, (ptr->elem % 2 != 0) ? copy(ptr->next) : new NODE(ptr->elem, copy(ptr->next)));
+//	return result;
+//}
+//FLIST listcopy{};
+//ptrnode ptr = list.get_head()->next;
+//listcopy.get_head()->next = copy(ptr);
+//std::cout << "\n";
+//listcopy.print(list);
+//.....................................................
+//puting the minimum number to the end of the list. 
+//void Task1_4(FLIST& list)
+//{
+//	ptrnode ptr_min{}, ptr{ list.get_head() };
+//	while (ptr->next)
+//	{
+//		if (!ptr_min) ptr_min = ptr;
+//		else if (ptr_min->next->elem >= ptr->next->elem) ptr_min = ptr;
+//		ptr = ptr->next;
+//	}
+//	ptrnode tmp = ptr_min->next;
+//	ptr_min->next = ptr_min->next->next;
+//	ptrnode ptail = list.get_tail();
+//	ptail->next = tmp;
+//	list.set_tail(tmp);
+//	tmp->next = nullptr;
+//}
+//................................................................
+//Finding the last and perdlast element. and double//ydvait the element which can be multiplied by 3. 
+//void Task1_3(FLIST& list)
+//{
+//	auto lambda = [](int x)
+//	{
+//		return x > 9 && x < 100;
+//	};
+//
+//	ptrnode ptr1{}, ptr2{}, ptr{ list.get_head()->next };
+//	while (ptr)
+//	{
+//		if (lambda(ptr->elem))
+//		{
+//			ptr1 = ptr2;
+//			ptr2 = ptr;
+//		}
+//		ptr = ptr->next;
+//	}
+//	if (ptr1 && ptr2)
+//	{
+//		ptr1 = ptr1->next;
+//		while (ptr1 != ptr2)
+//		{
+//			if (ptr1->elem % 3 == 0)
+//			{
+//				list.add_after(ptr1, ptr1->elem);
+//				ptr1 = ptr1->next;
+//			}
+//			ptr1 = ptr1->next;
+//		}
+//	}
+//
+//}
+//..........................................
+//n,m size, find the the row number which is consisting the even number udushe podriad. 
+//bool check(int* arr, int size)
+//{
+//	int cnt{};
+//	for (int i{}; i < size - 1; ++i)
+//		for (int j{}; j < size; ++j)
+//			if ((arr[i] % 7 == 0 && arr[j] % 7 != 0) || (arr[i] % 7 != 0 && arr[j] % 7 == 0))
+//				++cnt;
+//
+//	return cnt % 2 == 0;
+//}
+//int Task1_1(int** begin, int** end, int COLS)
+//{
+//	bool flag{};
+//
+//	while (!flag && begin < end)
+//	{
+//		if (check(*begin, COLS)) flag = true;
+//		++begin;
+//	}
+//
+//	return end - begin + 1;
+//}
+//................................................................................
+//500 length of the row. number of the row which the minimum words are even lenght
+//void Task1_2(std::ifstream & file)
+//{
+//
+//	auto lambda = [](char* word)
+//	{
+//		int size = strlen(word);
+//		char symbol = word[size - 1];
+//		return (strchr(word, symbol) == word + size - 1) && (size % 2 == 0);
+//	};
+//
+//	int n{};
+//	cin >> n;
+//	char* ptr{}, line[size_line]{};
+//	char* ptmp = NULL;
+//	int cnt_line{};
+//	while (file.getline(line, size_line))
+//	{
+//		++cnt_line;
+//		ptr = strtok_s(line, " .,:;", &ptmp);
+//		int cnt{};
+//		while (ptr)
+//		{
+//			if (lambda(ptr)) ++cnt;
+//			ptr = strtok_s(0, " .,:;", &ptmp);
+//
+//		}
+//		if (cnt == n) cout << cnt_line << " ";
+//	}
+//}
+//..........................................................................................
+//second number. 
+//..........................................................................................
+task555
+//doubling the element which is located in the position even or odd. 
+//ptrnode copy_odd(const ptrnode ptr)
+//{
+//	ptrnode result = nullptr;
+//	if (ptr)
+//		result = new NODE(ptr->elem, new NODE(ptr->elem, copy_odd(ptr->next)));
+//	return result;
+//}
+//ptrnode copy_even(const ptrnode ptr)
+//{
+//	ptrnode result = nullptr;
+//	if (ptr)
+//		result = new NODE(ptr->elem, copy_even(ptr->next));
+//	return result;
+//}
+//ptrnode copy(const ptrnode ptr, bool fg)
+//{
+//	ptrnode result = nullptr; 
+//	if (ptr)
+//		result = new NODE(ptr->elem, (fg) ? copy(ptr->next, !fg) : new NODE(ptr->elem, copy(ptr->next, !fg)));
+//	return result;
+//}
+
+//..............................................................................................
+//task111.
+//Number of the odd row which the numbers last digit is the same. 
+//bool check_line(int* arr)
+//{
+//	int i{};
+//	bool check{};
+//	while (!check && i < 8)
+//	{
+//		int* current = arr + i;
+//		int cnt{ 1 };
+//		for (int* begin = current + 1; begin < arr + 8; ++begin)
+//		{
+//			if (abs(*current) % 10 == abs(*begin) % 10) ++cnt;
+//		}
+//		if (cnt > 2) check = true;
+//		++i;
+//
+//	}
+//	return check;
+//
+//}
+//int Task1(int* begin, int* end)
+//{
+//	int cnt{};
+//
+//	for (begin; begin < end; begin += 16)
+//	{
+//		if (check_line(begin)) ++cnt;
+//	}
+//	return cnt;
+//}
+//.............................................................................................
+tast 22222. 
+//find the first row number which which the words length is and the first lette is repeating. 
+
+int Task2(std::ifstream& file, int n)
+{
+	auto check_word = [](string word)
+		{
+			int res{};
+			if (word.size() % 2 != 0)
+			{
+				string first_sym{ word[0] };
+				if (word.find(first_sym, 1) != string::npos) ++res;
+			}
+			return res;
+		};
+
+
+	bool flag{};
+	string line{}, word_draft{};
+	int cnt_line{};
+	while (!flag && getline(file, line))
+	{
+		++cnt_line;
+		size_t start{}, end{};
+		int cnt{};
+
+		while ((start = line.find_first_not_of(token, end)) != string::npos)
+		{
+			end = line.find_first_of(token, start);
+			word_draft = line.substr(start, end - start);
+			cnt += check_word(word_draft);
+		}
+		if (cnt == n) flag = true;
+	}
+	if (!flag) cnt_line = 0;
+
+	return cnt_line;
+}
+//..........................................................................................
+//333
+//finding the first and second elements. Find the pair devisiable by three and delete the double elements between the pair
+//void del_list(FLIST& list, ptrNODE& ptr1, ptrNODE& ptr2)
+//{
+//
+//	while (ptr1->next != ptr2)
+//	{
+//		if (ptr1->next->info > 9 && ptr1->next->info < 100)
+//			list.del_after(ptr1);
+//		else ptr1 = ptr1->next;
+//	}
+//}
+//
+//void Task3(FLIST& list, std::function<bool(int)> lambda)
+//{
+//	ptrNODE ptr1{}, ptr2{}, beg{ list.get_head()->next };
+//	while (beg && (!ptr1 || !ptr2))
+//	{
+//		if (lambda(beg->info))
+//		{
+//			if (!ptr1) ptr1 = beg;
+//			else ptr2 = beg;
+//		}
+//		beg = beg->next;
+//	}
+//	if (ptr1 && ptr2) del_list(list, ptr1, ptr2);
+//}
+//........................................................................................
+//task444. 2222. 
+//void Task4(FLIST& list)
+//{
+//	ptrnode ptr_max{ list.get_head() };
+//	ptrnode ptr{ ptr_max->next };
+//
+//	while (ptr->next)
+//	{
+//		if (ptr->next->elem > ptr_max->next->elem) ptr_max = ptr;
+//		ptr = ptr->next;
+//	}
+//
+//	ptrnode tmp = ptr_max->next;
+//	ptr_max->next = ptr_max->next->next;
+//	tmp->next = list.get_head()->next;
+//	list.get_head()->next = tmp;
+//}
+//.........................................................................................
+
+
+
+
