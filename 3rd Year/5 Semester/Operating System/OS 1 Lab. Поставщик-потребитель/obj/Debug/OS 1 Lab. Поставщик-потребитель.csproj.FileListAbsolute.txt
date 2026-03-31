@@ -1,0 +1,11 @@
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\bin\Debug\OS_1_Lab.Поставщик_потребитель.exe.config
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\bin\Debug\OS_1_Lab.Поставщик_потребитель.exe
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\bin\Debug\OS_1_Lab.Поставщик_потребитель.pdb
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS 1 Lab. Поставщик-потребитель.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS_1_Lab.Поставщик_потребитель.Properties.Resources.resources
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS 1 Lab. Поставщик-потребитель.csproj.GenerateResource.cache
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS 1 Lab. Поставщик-потребитель.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS_1_Lab.Поставщик_потребитель.exe
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS_1_Lab.Поставщик_потребитель.pdb
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\OS_1_Lab.Поставщик_потребитель.exe.config
+C:\Users\Muzamil Mia\Desktop\OS\OS 1 Lab. Поставщик-потребитель\obj\Debug\MainForm.resources

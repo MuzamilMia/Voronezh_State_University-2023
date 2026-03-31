@@ -1,0 +1,10 @@
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\_2.Lab_OS_No12.Properties.Resources.resources
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.csproj.GenerateResource.cache
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\bin\Debug\2.Lab OS No12.exe.config
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\bin\Debug\2.Lab OS No12.exe
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\bin\Debug\2.Lab OS No12.pdb
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.exe
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.pdb
+C:\Users\Muzamil Mia\Desktop\OS\2.Lab OS No12\obj\Debug\2.Lab OS No12.exe.config

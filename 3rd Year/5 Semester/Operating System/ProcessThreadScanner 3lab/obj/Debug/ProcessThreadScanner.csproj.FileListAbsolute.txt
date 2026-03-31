@@ -1,0 +1,10 @@
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\bin\Debug\ProcessThreadScanner.exe.config
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\bin\Debug\ProcessThreadScanner.exe
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\bin\Debug\ProcessThreadScanner.pdb
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.Properties.Resources.resources
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.csproj.GenerateResource.cache
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.exe
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.pdb
+C:\Users\Muzamil Mia\Desktop\OS\ProcessThreadScanner\obj\Debug\ProcessThreadScanner.exe.config

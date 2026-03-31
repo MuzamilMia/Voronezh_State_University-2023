@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|c:\\users\\muzamil mia\\desktop\\os\\2.lab os no12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|c:\\users\\muzamil mia\\desktop\\os\\2.lab os no12\\directoryscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:directoryscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\winapifilefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:winapifilefinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\filescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:filescanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|c:\\users\\muzamil mia\\desktop\\os\\2.lab os no12\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|c:\\users\\muzamil mia\\desktop\\os\\2.lab os no12\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|c:\\users\\muzamil mia\\desktop\\os\\2.lab os no12\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A73FBA6E-302C-4685-8B8B-76EF97C7FE32}|2.Lab OS No12.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:42:47.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:39:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:39:50.111Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DirectoryScanner.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\DirectoryScanner.cs",
+              "RelativeDocumentMoniker": "DirectoryScanner.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\DirectoryScanner.cs",
+              "RelativeToolTip": "DirectoryScanner.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:39:05.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcCAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T08:05:52.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WinAPIFileFinder.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\WinAPIFileFinder.cs",
+              "RelativeDocumentMoniker": "WinAPIFileFinder.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\WinAPIFileFinder.cs",
+              "RelativeToolTip": "WinAPIFileFinder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T10:58:24.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileScanner.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\FileScanner.cs",
+              "RelativeDocumentMoniker": "FileScanner.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\2.Lab OS No12\\FileScanner.cs",
+              "RelativeToolTip": "FileScanner.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAkwN0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:09:18.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1F1FC3-94A9-4CF8-B2B5-7AD0D0A15EC7}|ProcessThreadScanner.csproj|C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\processthreadscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1F1FC3-94A9-4CF8-B2B5-7AD0D0A15EC7}|ProcessThreadScanner.csproj|solutionrelative:processthreadscanner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B1F1FC3-94A9-4CF8-B2B5-7AD0D0A15EC7}|ProcessThreadScanner.csproj|c:\\users\\muzamil mia\\desktop\\os\\processthreadscanner\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B1F1FC3-94A9-4CF8-B2B5-7AD0D0A15EC7}|ProcessThreadScanner.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAMEAAAAA/P////8ZwCYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:50:12.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcessThreadScanner.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\ProcessThreadScanner.cs",
+              "RelativeDocumentMoniker": "ProcessThreadScanner.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\OS\\ProcessThreadScanner\\ProcessThreadScanner.cs",
+              "RelativeToolTip": "ProcessThreadScanner.cs",
+              "ViewState": "AgIAAIIBAAAAdlW336QiwIgBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T09:49:33.685Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
