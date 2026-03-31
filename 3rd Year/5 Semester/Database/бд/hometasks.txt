@@ -1,0 +1,846 @@
+Фамилии и инициалы студентов, у которых вторая буква «А»
+SELECT CONCAT(surname, ‘ ‘, FIRST(name), ‘.’, FIRST(patronymic)) FIO
+FROM students
+WHERE UPPER(SUBSTRING(surname FROM 2 FOR 1)) = ‘A’;
+Фамилии и инициалы преподавателей, id вне диапазона 2..12 и в e-mail которых нет символов '%', '.', '&', но есть '_' или '‒'. Результат в лексикографическом порядке
+SELECT CONCAT(surname, ‘ ‘, FIRST(name), ‘.’, FIRST(patronymic)) FIO
+FROM teachers
+WHERE id NOT BETWEEN 2 AND 12
+AND email NOT LIKE ‘%x%%’ ESCAPE x
+AND email NOT LIKE ‘%.%’
+AND email NOT LIKE ‘%&%’
+AND email LIKE ‘%x_%’ ESCAPE x
+OR email LIKE ‘%-%’
+ORDER BY surname, name, patronymic;
+Фамилия, имя, дата рождения, курс, группа в одном столбце; только студенты четных курсов; сортировка по этому столбцу
+SELECT CONCAT(surname, ‘ ‘, name, ‘ ‘, CAST(birthday AS CHAR), ‘ ‘, CAST(course AS CHAR), ‘ ‘, CAST(group AS CHAR)) info
+FROM students
+WHERE (course % 2) = 0
+ORDER BY info
+Фамилии и инициалы студентов и название времени года, к которому относится их день рождения
+SELECT CONCAT(surname, ‘ ‘, FIRST(name), ‘.’, FIRST(patronymic)) FIO, 
+CASE
+WHEN EXTRACT(MONTH FROM birthday) IN (12, 1, 2) THEN ‘winter’
+WHEN EXTRACT(MONTH FROM birthday) IN (3, 4, 5) THEN ‘spring’
+WHEN EXTRACT(MONTH FROM birthday) IN (6, 7, 😍 THEN ‘summer’
+WHEN EXTRACT(MONTH FROM birthday) IN (9, 10, 11) THEN ‘autumn’
+FROM students
+Средний возраст студентов 2-го курса
+SELECT CAST(AVG(EXTRACT(YEAR from AGE(CURRENT_DATE, birthday))) AS FLOAT) avg_age
+FROM students
+WHERE course = 2;
+Название факультета и фамилия, имя, отчество декана; сортировка по названию факультета
+SELECT f.name faculty_name, t.surname dean_surname, t.name dean_name, t.patronymic dean_patronymic
+FROM faculties f
+LEFT JOIN teachers ON f.dean_id = t.id
+ORDER BY f.name;
+Все данные о деканах, которые преподают "Математический анализ"
+SELECT t.*
+FROM teachers
+WHERE t.id IN (
+SELECT DISTINCT pf.teacher_id
+FROM performances pf
+JOIN disciplines d ON pf.discipline_id = d.id
+WHERE UPPERCASE(d.name) = ‘МАТЕМАТИЧЕСКИЙ АНАЛИЗ’)
+AND t.id IN (SELECT dean_id FROM faculties WHERE dean_id IS NOT NULL);
+Название факультета, курс, группу, фамилию и инициалы студента, название дисциплины, дату экзамена, оценку, фамилию и инициалы преподавателя, и текущую должность преподавателя; сортировка: факультет — в обратном лексикографическом, курс и группа — по возрастанию, студенты — лексикографически
+SELECT f.name, s.course, s.group, CONCAT(s.surname, ‘ ‘, FIRST(s.name), ‘.’, FIRST(s.patronymic)) FIO_student, d.name, pf.date, pf.grade,  CONCAT(t.surname, ‘ ‘, FIRST(t.name), ‘.’, FIRST(t.patronymic)) FIO_teacher, p.name
+FROM students s
+JOIN faculties f ON s.faculty_id = f.id
+JOIN performances pf ON pf.student_id = s.id
+JOIN disciplines d ON pf.discipline_id = d.id
+JOIN teachers t ON pf.teacher_id = t.id
+ORDER BY f.name DESC, s.course ASC, s.group ASC, s.surname, s.name, s.patronymic;
+Курс, группа, фамилия, имя, отчество студента и, если студент сдал дисциплину на отлично, название дисциплины
+SELECT s.course, s.group, s.surname, s.name, s.patronymic, 
+CASE WHEN pf.grade = 5 THEN d.name ELSE NULL END excellent_discipline
+FROM students
+LEFT JOIN performances pf ON pf.student_id = s.id
+Названия всех дисциплин и, если по дисциплине есть оценки, фамилия и инициалы преподавателя, поставившего оценку, без повторений. Включить преподавателей, которые ещё не принимали экзамены
+SELECT d.name, 
+CASE WHEN pf.grade IS NOT NULL THEN CONCAT(t.surname, ‘ ‘, FIRST(t.name), ‘.’, FIRST(t.patronymic))
+ELSE NULL END teacher
+FROM performances pf
+LEFT JOIN teachers t ON pf.teacher_id = t.id
+LEFT JOIN discplines d ON pf.discipline_id = d.id
+Названия всех факультетов и фамилии и инициалы деканов; учесть, что декан может быть не указан; сортировать по названию факультета
+SELECT f.name, CONCAT(t.surname, ‘ ‘, FIRST(t.name), ‘.’, FIRST(t.patronymic)) FIO_dean
+FROM faculties f
+LEFT JOIN teachers t ON f.dean_id = t.id
+ORDER BY f.name;
+
+
+
+45. Выбрать фамилии студентов, изменив фамилии следую- щим образом: убрать из фамилий последнюю букву «А».
+SELECT CASE WHEN RIGHT(last_name,1) = 'А' THEN LEFT(last_name, CHAR_LENGTH(last_name) - 1) ELSE last_name END AS last_name_modified
+FROM students;
+46. Выбрать все данные о студентах с фамилиями, заканчи- вающимися на букву «Ц», изменив фамилии следующим образом: добавить в конец фамилий «-енков».
+SELECT s.*, s.last_name || '-енков' AS last_name_modified
+FROM students s
+WHERE RIGHT(s.last_name,1) = 'Ц';
+49. Выбрать фамилии, имена, отчества студентов и, если студент 4-го курса, то в последнем столбце результирующей таб- лицы вывести сообщение «Выпускник». Результат отсортировать следующим образом: в первую очередь студенты 2-го и 3-го кур- сов, затем других курсов, а также по фамилии, имени и отчеству в лексикографическом порядке.
+SELECT last_name, first_name, patronymic,
+CASE WHEN course = 4 THEN 'Выпускник' ELSE NULL END AS note
+FROM students
+ORDER BY (CASE WHEN course IN (2,3) THEN 0 ELSE 1 END), last_name, first_name, patronymic;
+10. Выбрать максимальную, минимальную, среднюю и сум- марную стипендии на 2-м курсе в 10-й группе.
+SELECT MAX(scholarship) AS max_scholarship,
+MIN(scholarship) AS min_scholarship,
+AVG(scholarship)::numeric AS avg_scholarship,
+SUM(scholarship) AS sum_scholarship
+FROM students
+WHERE course = 2 AND group_number = 10;
+14. Выбрать курс, группу, фамилию, имя, отчество всех сту- дентов, названия всех дисциплин: тех, которые сдавались студен- тами, и тех, которые не сдавались, – если дисциплина сдавалась студентом, то указать фамилию и инициалы преподавателя.
+SELECT s.course, s.group_number, s.last_name, s.first_name, s.patronymic,
+d.name AS discipline_name,
+CASE WHEN g.id IS NOT NULL THEN (t.last_name || ' ' || LEFT(t.first_name) || '.' || LEFTt.patronymic) || '.') ELSE NULL END AS teacher_initials
+FROM students s
+LEFT JOIN grades g ON g.student_id = s.id
+CROSS JOIN disciplines d ON g.discipline_id = d.id
+LEFT JOIN teachers t ON g.teacher_id = t.id
+ORDER BY s.id, d.name;
+30. Выбрать преподавателей, которые имеют оклад больше, чем их руководитель.
+SELECT t.id, t.last_name, t.first_name, t.patronymic, dol.salary, m.id AS manager_id, m.last_name AS manager_last_name, mdol.salary AS manager_salary
+FROM teachers t
+JOIN teachers m ON t.manager_id = m.id
+JOIN dolzhnoststeachers dt ON dt.teacher_id = t.id
+JOIN dolzhnost dol ON dt.dolzhnost.id = dol.id
+JOIN dolzhnoststeachers mdt ON mdt.teacher_id = m.id
+JOIN dolzhnost mdol ON mdt.dolzhnost.id = mdol.id
+WHERE mdol.salary > tdol.salary;
+32. Выбрать однофамильцев среди студентов и преподавателей.
+SELECT s.last_name, s.first_name AS student_first, s.patronymic AS student_patronymic,
+t.first_name AS teacher_first, t.patronymic AS teacher_patronymic
+FROM students s
+JOIN teachers t ON s.last_name = t.last_name
+ORDER BY s.last_name, s.first_name, t.first_name;
+36. Для каждого студента выбрать названия всех дисциплин
+SELECT s.id, s.last_name, s.first_name,
+COALESCE(string_agg(DISTINCT d.name, ', ' ORDER BY d.name), '') AS disciplines_taken
+FROM students s
+LEFT JOIN grades g ON g.student_id = s.id
+LEFT JOIN disciplines d ON g.discipline_id = d.id
+GROUP BY s.id, s.last_name, s.first_name
+ORDER BY s.id;
+37. Для каждого студента факультета ПММ выбрать назва- ния всех имеющихся в БД дисциплин.
+SELECT s.id, s.last_name, s.first_name,
+string_agg(d.name, ', ' ORDER BY d.name) AS all_disciplines
+FROM students s
+JOIN faculties f ON s.faculty_id = f.id
+CROSS JOIN disciplines d
+WHERE f.name = 'ПММ'
+GROUP BY s.id, s.last_name, s.first_name
+ORDER BY s.id;
+
+
+
+(3) Выбрать для каждого курса дату рождения самого молодого студента на курсе.
+
+SELECT course, MAX(birth_date) AS youngest_birth_date
+FROM students
+GROUP BY course
+ORDER BY course;
+(7) Выбрать номер месяца и количество первокурсников, рожденных в этот месяц.
+
+SELECT EXTRACT(MONTH FROM birth_date)::int AS month, COUNT(*) AS first_year_count
+FROM students
+WHERE course = 1
+GROUP BY month
+ORDER BY month;
+(12) Выбрать год и количество рожденных в этот год. Количество рожденных должно быть распределено по временам года. В результирующей таблице должно быть пять столбцов (год в первом столбце и названия времен года в последующих).
+
+SELECT EXTRACT(YEAR FROM birth_date)::int AS year,
+       COUNT(CASE WHEN EXTRACT(MONTH FROM birth_date) IN (12,1,2) THEN 1 END) AS winter,
+       COUNT(CASE WHEN EXTRACT(MONTH FROM birth_date) IN (3,4,5) THEN 1 END) AS spring,
+       COUNT(CASE WHEN EXTRACT(MONTH FROM birth_date) IN (6,7,8) THEN 1 END) AS summer,
+       COUNT(CASE WHEN EXTRACT(MONTH FROM birth_date) IN (9,10,11) THEN 1 END) AS autumn
+FROM students
+GROUP BY year
+ORDER BY year;
+(18) Выбрать фамилию, имя, курс, группу, среднюю оценку студента.
+
+SELECT s.last_name, s.first_name, s.course, s.group, AVG(p.grade) AS avg_grade
+FROM students s
+JOIN performance p ON s.student_ticket_number = p.student_ticket_number
+GROUP BY s.student_ticket_number, s.last_name, s.first_name, s.course, s.group
+ORDER BY s.last_name, s.first_name;
+(20) Выбрать количество студентов, получивших неудовлетворительные оценки за последнюю зимнюю сессию.
+
+SELECT COUNT(DISTINCT p.student_ticket_number) AS students_with_unsat
+FROM performance p
+WHERE EXTRACT(YEAR FROM p.date) = (
+    SELECT EXTRACT(YEAR FROM MAX(date))::int 
+    FROM performance 
+    WHERE EXTRACT(MONTH FROM date) IN (12,1,2)
+)
+AND EXTRACT(MONTH FROM p.date) IN (12,1,2)
+AND p.grade < 3;
+(24) Выбрать название факультета, количество студентов, обучающихся на факультете, и количество преподавателей, работающих на факультете.
+
+SELECT f.name AS faculty_name,
+       COUNT(DISTINCT s.student_ticket_number) AS students_count,
+       COUNT(DISTINCT t.teacher_id) AS teachers_count
+FROM faculties f
+LEFT JOIN students s ON s.faculty_id = f.faculty_id
+LEFT JOIN teachers t ON t.faculty_id = f.faculty_id
+GROUP BY f.faculty_id, f.name
+ORDER BY f.name;
+(28) Выбрать названия дисциплин, которые преподаются сотрудниками факультета ПММ, количество студентов, сдававших дисциплину, среднюю оценку по дисциплине. В результат включить только дисциплины, которые сдавало более 20 студентов.
+
+SELECT d.name AS discipline_name,
+       COUNT(DISTINCT p.student_ticket_number) AS students_count,
+       AVG(p.grade) AS avg_grade
+FROM disciplines d
+JOIN performance p ON p.discipline_id = d.discipline_id
+JOIN teachers t ON p.teacher_id = t.teacher_id
+JOIN faculties f ON t.faculty_id = f.faculty_id
+WHERE f.name = 'ПММ'
+GROUP BY d.discipline_id, d.name
+HAVING COUNT(DISTINCT p.student_ticket_number) > 20
+ORDER BY d.name;
+(30) Выбрать преподавателей, которые имеют оклад больше, чем их руководитель.
+
+WITH current_salary AS (
+  SELECT tip.teacher_id, MAX(pos.salary) AS salary
+  FROM teacher_in_positions tip
+  JOIN positions pos ON tip.position_id = pos.position_id
+  WHERE tip.end_date IS NULL OR tip.end_date > now()
+  GROUP BY tip.teacher_id
+)
+SELECT t.*
+FROM teachers t
+JOIN teachers m ON t.manager_id = m.teacher_id
+LEFT JOIN current_salary ts ON ts.teacher_id = t.teacher_id
+LEFT JOIN current_salary ms ON ms.teacher_id = m.teacher_id
+WHERE ts.salary IS NOT NULL AND ms.salary IS NOT NULL AND ts.salary > ms.salary;
+(33) Выбрать тройки однофамильцев среди студентов.
+SELECT s1.last_name, s1.student_ticket_number AS student1, s2.student_ticket_number AS student2, s3.student_ticket_number AS student3
+FROM students s1
+JOIN students s2 ON s1.last_name = s2.last_name AND s1.student_ticket_number < s2.student_ticket_number
+JOIN students s3 ON s1.last_name = s3.last_name AND s2.student_ticket_number < s3.student_ticket_number
+ORDER BY s1.last_name, s1.student_ticket_number, s2.student_ticket_number, s3.student_ticket_number;
+(34) Выбрать общее количество однофамильцев среди студентов.
+SELECT COUNT(u.user_id) * 2 / (COUNT(u.user_id) - 1) AS total_same_surname_pairs
+FROM students s
+JOIN students as ON s.last_name = as.last_name
+WHERE s.student_id < as.student_id
+GROUP BY s.last_name;
+(44) Выбрать фамилию, имя, отчество преподавателей факультета ПММ, средняя оценка у которых ниже 3,7.
+
+SELECT t.last_name, t.first_name, t.patronymic
+FROM teachers t
+JOIN faculties f ON t.faculty_id = f.faculty_id
+LEFT JOIN performance p ON p.teacher_id = t.teacher_id
+WHERE f.name = 'ПММ'
+GROUP BY t.teacher_id, t.last_name, t.first_name, t.patronymic
+HAVING AVG(p.grade) < 3.7;
+(31) Выбрать все данные студента, который старше какого-нибудь преподавателя.
+
+SELECT DISTINCT s.*
+FROM students s, teachers t
+WHERE s.birth_date < t.birth_date;
+
+SELECT DISTINCT s.*
+FROM students s
+JOIN faculties f ON s.faculty_id = f.faculty_id
+LEFT JOIN teachers t ON t.faculty_id = f.faculty_id
+WHERE s.birth_date < t.birth_date;
+
+SELECT s.*
+FROM students s
+WHERE EXISTS (
+  SELECT 1 FROM teachers t WHERE s.birth_date < t.birth_date
+);
+
+
+
+10. Выбрать названия и даты начала разработки проектов, в описании которых есть хотя бы три слова и нет символов «!», «?», «%», «»
+SELECT "Название", "Дата начала разработки"
+FROM "Проекты"
+WHERE array_length(regexp_split_to_array(trim("Описание"), '\s+’), 1) >= 3
+AND "Описание" !~ '[!?%]';
+18. Выбрать фамилию, имя, отчество сотрудников, которые работают над не завершенными задачами проекта ИПС BOOK. Результат отсортировать по фамилии, имени и отчеству в лексико-графическом порядке.
+SELECT DISTINCT s."Фамилия", s."Имя", s."Отчество"
+FROM "Сотрудники" s
+JOIN "Исполнители задач" i ON s."id_сотрудника" = i."id_сотрудника"
+JOIN "Задачи" z ON i."id_задачи" = z."id_задачи"
+JOIN "Проекты" p ON z."id_проекта" = p."id_проекта"
+WHERE z."Дата завершения факт" IS NULL
+AND (p."Краткое название" = 'ИПС BOOK' OR p."Название" = 'ИПС BOOK')
+ORDER BY s."Фамилия", s."Имя", s."Отчество";
+23. Выбрать название должности и количество сотрудников, вступивших в должность в текущем году. Результат отсортировать по количеству в порядке убывания.
+SELECT d."Название", count(sd."id_СД") AS cnt
+FROM "Сотрудники_Должность" sd
+JOIN "Должности" d ON sd."id_должности" = d."id_должности"
+WHERE extract(year FROM sd."Дата вступления") = extract(year FROM current_date)
+GROUP BY d."Название"
+ORDER BY cnt DESC;
+25. Выбрать проекты, начатые более года назад и имеющие более трех незавершенных задач.
+SELECT p.*
+FROM "Проекты" p
+JOIN "Задачи" z ON p."id_проекта" = z."id_проекта"
+WHERE p."Дата начала разработки" < current_date - INTERVAL '1 year'
+  AND z."Дата завершения факт" IS NULL
+GROUP BY p."id_проекта" …
+HAVING COUNT(*) > 3;
+26. Выбрать названия типов задач, имеющих более трех не- завершенных задач по одному проекту. Каждое название в результирующей таблице должно упоминаться только один раз. Результат отсортировать по названию в лексикографическом порядке.
+SELECT DISTINCT tp."Название"
+FROM "Тип" tp
+JOIN "Задачи" z ON tp."id_типа" = z."id_типа"
+WHERE z."Дата завершения факт" IS NULL
+GROUP BY tp."Название", tp."id_типа", z."id_проекта"
+HAVING count(z."id_задачи") > 3
+ORDER BY tp."Название";
+27. Выбрать все данные по проектам, над которыми работает более пяти сотрудников моложе 25 лет.
+SELECT p.*
+FROM "Проекты" p
+JOIN "Задачи" z ON p."id_проекта" = z."id_проекта"
+JOIN "Исполнители задач" i ON i."id_задачи" = z."id_задачи"
+JOIN "Сотрудники" s ON i."id_сотрудника" = s."id_сотрудника"
+WHERE (current_date - s."Дата рождения") < INTERVAL '25 years'
+GROUP BY p."id_проекта" …
+HAVING COUNT(DISTINCT i."id_сотрудника") > 5;
+29. Выбрать названия всех типов задач, и, если есть незавершенные задачи этого типа, то id_задачи и краткое название проекта.
+SELECT tp."Название" AS тип_задачи, z."id_задачи", pr."Краткое название"
+FROM "Тип" tp
+LEFT JOIN "Задачи" z ON z."id_типа" = tp."id_типа"
+LEFT JOIN "Проекты" pr ON z."id_проекта" = pr."id_проекта"
+WHERE z."Дата завершения факт" IS NULL OR z."id_задачи" IS NULL
+ORDER BY tp."Название";
+32. Для каждого названия проекта выбрать названия всех типов задач, и если есть в проекте соответствующего типа задачи, то их количество.
+SELECT p."Название" AS проект, tp."Название" AS тип_задачи, count(z."id_задачи") AS количество
+FROM "Проекты" p
+CROSS JOIN "Тип" tp
+LEFT JOIN "Задачи" z ON z."id_проекта" = p."id_проекта" AND z."id_типа" = tp."id_типа"
+GROUP BY p."Название", tp."Название"
+ORDER BY p."Название", tp."Название”;
+
+
+
+
+
+1. Выбрать все данные о самом молодом преподавателе.
+
+SELECT t.* FROM teachers t
+WHERE t.birthdate IN (SELECT MIN(birthdate) FROM teachers);
+
+2. Выбрать название должностей с минимальным окладом.
+
+SELECT p.name
+FROM positions p
+WHERE p.salary IN (SELECT MIN(salary) FROM positions);
+
+5. Выбрать все данные о самом молодом и самом старшем
+преподавателях.
+
+SELECT t1.* t2.*
+FROM teachers t1
+JOIN teachers t2 ON t1.teacher_id < t2.teacher_id
+WHERE t1.birthdate IN (SELECT MIN(birthdate) FROM teachers) AND t2.birthdate IN (SELECT MIN(birthdate) FROM teachers);
+
+6. Выбрать группы, в которых учится столько же студентов,
+сколько в 10-й группе 2-го курса.
+
+SELECT s.group
+FROM students s 
+GROUP BY s.student_id
+HAVING COUNT(s.student_id) = (SELECT COUNT(student_id) FROM students WHERE group = 10 AND course = 2);
+
+8. Выбрать все данные преподавателей, которые работают
+на одном факультете с преподавателем Ивановым Иваном Ивановичем.
+
+SELECT t.*
+FROM teachers t
+JOIN faculties f ON t.faculty_id = f.faculty_id
+WHERE f.faculty_id IN (SELECT faculty_id FROM teachers t JOIN faculties f ON f.faculty_id = t.faculty_id WHERE FIO=ИВАНИВАНЫЧ);
+
+9. Выбрать названия факультетов, на которых средняя стипендия 
+ниже средней стипендии на факультете ПММ.
+
+SELECT f.faculty_name
+FROM faculties f
+JOIN students s ON s.faculty_id = f.faculty_id
+GROUP BY f.faculty_id, f.faculty_name
+HAVING AVG(s.scholarship) < (SELECT AVG(s.scholarship) FROM students s JOIN faculties ON s.faculty_id = f.faculty_id WHERE f.faculty_name=“AMM”);
+
+19. Вывести фамилию, имя, отчество студентов, обучающихся 
+в группах, в которых менее 12 человек.
+
+SELECT s.FIO
+FROM students s
+WHERE s.group IN (SELECT group FROM students GROUP BY group HAVING COUNT(student_id) < 12);
+
+21. Выбрать название факультета, фамилию, имя, отчество
+декана, количество человек, работающих на факультете, и общее
+количество человек, работающих в вузе.
+
+SELECT f.faculty_name, d.fio, COUNT(DISTINCT t.teacher_id), (SELECT COUNT(*) FROM teachers)
+FROM faculties f
+LEFT JOIN teachers d ON d.teacher_id = f.dean_id
+LEFT JOIN teachers t ON f.faculty_id = t.faculty_id
+GROUP BY f.faculty_name, d.fio, d.teacher_id;
+
+
+
+Подумать как можно деление выразить через базовые операции, получится чуть сложнее чем с пересечением. 
+R / S
+R (A B) S (B) -> R / S (A)
+
+П_A(R) -  П_A(П_A(R) * S - R) 
+
+
+найти какую-то составляющую, которая входит в продукт в количестве большем 20 например, у нас это жиры углеводы в пельменях, то есть результат выборки - это название атрибута.Название атрибутов мы не выберем как кортежи в результирующее отношение, на практике все решается к справочным таблицам.
+
+WITH column_info AS (
+    SELECT 
+        column_name
+    FROM information_schema.columns 
+    WHERE table_name = 'products' 
+        AND table_schema = 'public'
+        AND data_type IN ('numeric', 'integer', 'real', 'double precision')
+        AND column_name != 'name’
+),
+unpivoted_data AS (
+    SELECT 
+        p.name as product,
+        ci.column_name as component,
+        CASE ci.column_name
+            WHEN 'protein' THEN p.protein
+            WHEN 'fat' THEN p.fat
+            WHEN 'carbs' THEN p.carbs
+            WHEN 'b12' THEN p.b12
+            WHEN 'b6' THEN p.b6
+            WHEN 'c' THEN p.c
+        END as value
+    FROM products p
+    CROSS JOIN column_info ci
+)
+SELECT product, component, value
+FROM unpivoted_data
+WHERE value > 20
+ORDER BY product, component;
+
+15. Выбрать фамилии студентов, которые получают стипен-
+дию больше, чем средняя стипендия на их факультете.
+
+SELECT s.surname
+FROM students s
+WHERE s.scholarship > (SELECT AVG(scholarship) FROM students);
+ 
+18. Выбрать по каждой должности фамилию, имя, отчество
+преподавателя, который принят на работу в эту должность по-
+следним.
+
+SELECT d.name, t.surname, t.name, t.patronymic
+FROM teacher_dolzhnost td
+JOIN teachers t ON t.teacher_id = td.teacher_id
+JOIN dolzhnost d ON d.dolzhnost_id = td.dolzhnost_id
+WHERE td.date_vstupl >= ALL (SELECT date_vstupl FROM teacher_dolzhnost);
+
+22. Вывести фамилию, имя, отчество студентов, рожденных
+в тот год, в котором меньше всего студентов было рождено.
+
+SELECT s.surname, s.name, s.patronymic
+FROM students s
+WHERE YEAR(s.birthdate) IN (SELECT YEAR(birthdate) FROM students GROUP BY YEAR(birthdate) HAVING COUNT(*) <= ALL (SELECT COUNT(*) FROM students GROUP BY YEAR(birthdate))));
+23. Вывести месяц, в который родилось больше всего сту-
+дентов.
+
+SELECT MONTH(birthdate)
+FROM students
+GROUP BY MONTH(birthdate)
+HAVING COUNT(*) >= ALL (SELECT COUNT(*) FROM students GROUP BY MONTH(birthdate));
+
+24. Вывести фамилии трех студентов с наибольшим средним
+баллом.
+
+Эту задачу удобно решать через оконную функцию, через ранжирование.
+
+SELECT s.surname
+FROM students s
+JOIN performances p ON s.student_id = p.student_id
+GROUP BY s.student_id, s.surname
+HAVING AVG(p.grade) >= (
+    SELECT MIN(avg_grade)
+    FROM (
+        SELECT AVG(p2.grade) AS avg_grade
+        FROM students s2
+        JOIN performances p2 ON s2.student_id = p2.student_id
+        GROUP BY s2.student_id
+        ORDER BY avg_grade DESC
+        LIMIT 3
+    ) AS top_three
+);
+
+SELECT s.surname
+FROM students s
+JOIN performances p ON s.student_id = p.student_id
+GROUP BY s.surname, s.student_id
+ORDER BY AVG(p.grade) DESC
+LIMIT 3;
+
+29. Выбрать фамилию, имя, отчество студента, курс, группу,
+количество человек в группе, количество человек на курсе, коли-
+чество человек в вузе.
+
+WITH group_counts AS (
+    SELECT group, COUNT(*) AS group_count
+    FROM students
+    GROUP BY group
+),
+course_counts AS (
+    SELECT course, COUNT(*) AS course_count
+    FROM students
+    GROUP BY course
+),
+university_count AS (
+    SELECT COUNT(*) AS university_count
+    FROM students
+)
+SELECT 
+    s.surname,
+    s.name,
+    s.patronymic,
+    s.course,
+    s.group,
+    gc.group_count AS students_in_group,
+    cc.course_count AS students_in_course,
+    uc.university_count AS students_in_university
+FROM students s
+JOIN group_counts gc ON s.group = gc.group
+JOIN course_counts cc ON s.course = cc.course
+CROSS JOIN university_count uc;
+
+SELECT s.surname, s.name, s.patronymic, s.course, s.group, (SELECT COUNT(*) FROM students s2 WHERE s2.group = s.group), (SELECT COUNT(*) FROM students s3 WHERE s3.course = s.course), (SELECT COUNT(*) FROM students);
+
+
+
+
+10. Выбрать названия факультетов, на которых количество
+студентов 2-го курса совпадает с количеством студентов на 2-м
+курсе факультета ПММ.
+WITH faculty_counts AS (SELECT f.name name, COUNT(s.studentId) count FROM faculties f JOIN students s ON s.facultyId = f.facultyId GROUP BY f.facultyId, f.name)
+SELECT fc2.name 
+FROM faculty_counts fc1 
+JOIN faculty_counts fc2 ON fc1.count = fc2.count
+WHERE fc1.name = “AMM” AND fc2.name <> fc1.name;
+
+11. Выбрать названия факультетов без преподавателей.
+SELECT f.name
+FROM faculties f
+WHERE f.facultyId IN (SELECT t.facultyId FROM teachers t GROUP BY t.facultyId HAVING COUNT(t.teacherId) = 0);
+
+12. Выбрать все данные о студентах, у которых еще не было
+сессии.
+SELECT * 
+FROM students s
+WHERE NOT EXISTS (
+    SELECT 1 FROM performances p 
+    WHERE p.studentId = s.studentId
+);
+
+13. Выбрать все данные о студентах, учащихся на курсах, на
+которых менее 1000 студентов.
+SELECT s.*
+FROM students s
+JOIN (
+    SELECT course, COUNT(*) as cnt 
+    FROM students 
+    GROUP BY course 
+    HAVING COUNT(*) < 1000
+) course_counts ON s.course = course_counts.course;
+
+14. Выбрать название вакантной должности (либо человек
+уволился с этой должности и никто на эту должность на данный
+момент не принят, либо в этой должности никто никогда не рабо-
+тал).
+SELECT p.positionName
+FROM positions p
+WHERE NOT EXISTS (
+    SELECT 1 FROM teachers t 
+    WHERE t.positionId = p.positionId 
+    AND t.dateVstupl IS NULL OR t.dateVyhoda > CURRENT_DATE
+);
+
+16. Выбрать название дисциплин, которые не сдавались сту-
+дентами в зимнюю сессию.
+SELECT d.disciplineName
+FROM disciplines d
+WHERE d.disciplineId NOT IN (
+    SELECT DISTINCT p.disciplineId
+    FROM performances p
+    WHERE (EXTRACT MONTH FROM p.Date) IN (1, 3)
+);
+
+17. Выбрать курсы и группы без повторений тех факульте-
+тов, на которых преподается дисциплина «Базы данных».
+SELECT DISTINCT s.course, s.groupNumber
+FROM students s
+WHERE s.facultyId IN (
+    SELECT DISTINCT s.facultyId
+    FROM disciplines d
+    JOIN performances p ON d.disciplineId = p.disciplineId
+    JOIN students s ON p.studentId = s.studentId
+    WHERE d.disciplineName = 'Базы данных'
+)
+ORDER BY s.course, s.groupNumber;
+
+20. Выбрать фамилии, имена, отчества студентов 3-го курса,
+не сдававших дисциплину «Базы данных» за прошлый семестр.
+SELECT DISTINCT s.lastName, s.firstName, s.middleName
+FROM students s
+WHERE s.course = 3
+AND s.studentId NOT IN (
+    SELECT p.studentId
+    FROM performances p
+    INNER JOIN disciplines d ON p.disciplineId = d.disciplineId
+    WHERE d.disciplineName = 'Базы данных'
+    AND er.semester = (
+        SELECT CASE 
+            WHEN MONTH(CURRENT_DATE) BETWEEN 9 AND 12 THEN 1
+            ELSE 2
+        END
+    ) - 1 
+);
+
+25. Вывести слова «Есть однофамильцы», если есть однофа-
+мильцы по всей БД, и вывести «Однофамильцев нет», если тако-
+вых нет.
+SELECT 
+    CASE 
+        WHEN EXISTS (
+            SELECT lastName 
+            FROM (
+                SELECT lastName FROM students
+                UNION ALL
+                SELECT lastName FROM teachers
+            ) all_names
+            GROUP BY lastName
+            HAVING COUNT(*) > 1
+        ) THEN 'Есть однофамильцы'
+        ELSE 'Однофамильцев нет'
+    END as result;
+
+26. Вывести в одном столбце фамилии, имена, отчества сту-
+дентов и преподавателей. Для преподавателей указать количество
+предметов, которые ведет преподаватель, для студентов – количе-
+ство предметов, по которым студент имеет оценку «5» или «4».
+Результат отсортировать по фамилии, имени, отчеству в лексико-
+графическом порядке.
+SELECT 
+    CONCAT(lastName, ' ', firstName, ' ', middleName) as fullName,
+    CASE 
+        WHEN role = 'teacher' THEN CAST(subjectCount as VARCHAR(10))
+        ELSE CAST(goodGrades as VARCHAR(10))
+    END as info
+FROM (
+    SELECT 
+        t.lastName, t.firstName, t.middleName,
+        'teacher' as role,
+        COUNT(DISTINCT td.disciplineId) as subjectCount,
+        0 as goodGrades
+    FROM teachers t
+    LEFT JOIN teacher_disciplines td ON t.teacherId = td.teacherId
+    GROUP BY t.teacherId, t.lastName, t.firstName, t.middleName
+    
+    UNION ALL
+    
+    SELECT 
+        s.lastName, s.firstName, s.middleName,
+        'student' as role,
+        0 as subjectCount,
+        COUNT(DISTINCT CASE 
+            WHEN p.grade IN (4, 5) THEN p.disciplineId 
+        END) as goodGrades
+    FROM students s
+    LEFT JOIN performances p ON s.studentId = p.studentId
+    GROUP BY s.studentId, s.lastName, s.firstName, s.middleName
+) combined
+ORDER BY lastName, firstName, middleName;
+
+27. Выбрать два зимних месяца, в которые родилось больше
+всего преподавателей и студентов.
+SELECT TOP 2 
+    MONTH(birthDate) as birthMonth,
+    COUNT(*) as totalBirths
+FROM (
+    SELECT birthDate FROM students
+    UNION ALL
+    SELECT birthDate FROM teachers
+) all_people
+WHERE MONTH(birthDate) IN (12, 1, 2) 
+GROUP BY MONTH(birthDate)
+ORDER BY COUNT(*) DESC;
+
+28. Выбрать названия дисциплин, которые на «5» сдали 2/3
+от всех сдававших.
+SELECT d.disciplineName
+FROM disciplines d
+INNER JOIN (
+    SELECT 
+        p.disciplineId,
+        COUNT(CASE WHEN p.grade = 5 THEN 1 END) as excellentCount,
+        COUNT(DISTINCT p.studentId) as totalStudents
+    FROM performances p
+    GROUP BY p.disciplineId
+    HAVING COUNT(CASE WHEN p.grade = 5 THEN 1 END) * 1.0 / COUNT(DISTINCT p.studentId) >= 2.0/3.0
+) stats ON d.disciplineId = stats.disciplineId;
+
+
+
+Подумать над вариантами решения этой задачи, то есть найти студентов у которых только четверки. Разные варианты. Я подкину вам идеи, можно посравнивать максимальные минимальные оценки, например так. 
+
+
+
+29. Выбрать фамилию, имя, отчество студента, курс, группу,
+количество человек в группе, количество человек на курсе, коли-
+чество человек в вузе.
+WITH count_g AS (SELECT group, course, COUNT(*) FROM students, group by group, course),
+count_c AS (SELECT course COUNT(*) FROM students, group by course),
+count_s AS (SELECT COUNT(*) from students)
+SELECT s.surname, s.name, s.patronymic, s.course, s.group, cg.count, cc.count, cs.count
+FROM students
+JOIN count_g cg ON s.group = cg.group AND s.course = cg.course
+JOIN count_c cc ON s.course = cc.course
+JOIN count_s cs ON 1=1;
+
+
+
+
+
+42. Выбрать сотрудника, который никогда не завершает за-
+дачи в срок.
+WITH bad_tasks AS (
+    SELECT DISTINCT it.id_сотрудника
+    FROM Исполнители_задач it
+    JOIN Задачи z ON z.id_задачи = it.id_задачи
+    WHERE z.дата_завершения_факт IS NULL
+       OR z.дата_завершения_факт > z.дата_завершения_план
+)
+SELECT *
+FROM Сотрудники s
+WHERE s.id_сотрудника IN (SELECT id_сотрудника FROM bad_tasks)
+  AND s.id_сотрудника NOT IN (
+      SELECT DISTINCT it.id_сотрудника
+      FROM Исполнители_задач it
+      JOIN Задачи z ON z.id_задачи = it.id_задачи
+      WHERE z.дата_завершения_факт <= z.дата_завершения_план
+  );
+
+
+44. Выбрать все данные о сотруднике(-ах), который(-е) ра-
+ботал(-и) во всех проектах.
+WITH total_projects AS (
+    SELECT COUNT(*) cnt FROM Проекты
+)
+SELECT s.*
+FROM Сотрудники s
+JOIN Исполнители_задач it ON it.id_сотрудника = s.id_сотрудника
+JOIN Задачи z ON z.id_задачи = it.id_задачи
+GROUP BY s.id_сотрудника
+HAVING COUNT(DISTINCT z.id_проекта) = (SELECT cnt FROM total_projects);
+
+
+45. Выбрать название проекта с наибольшим количеством
+незавершенных задач.
+SELECT p.название
+FROM Проекты p
+JOIN Задачи z ON z.id_проекта = p.id_проекта
+WHERE z.дата_завершения_факт IS NULL
+GROUP BY p.id_проекта
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+
+46. Выбрать фамилию и инициалы сотрудника, завершивше-
+го вовремя наибольшее количество задач по проекту ИПС BOOK.
+SELECT
+    s.фамилия || ' ' ||
+    LEFT(s.имя,1) || '.' ||
+    LEFT(s.отчество,1) || '.' AS фио
+FROM Сотрудники s
+JOIN Исполнители_задач it ON it.id_сотрудника = s.id_сотрудника
+JOIN Задачи z ON z.id_задачи = it.id_задачи
+JOIN Проекты p ON p.id_проекта = z.id_проекта
+WHERE p.название = 'ИПС BOOK'
+  AND z.дата_завершения_факт <= z.дата_завершения_план
+GROUP BY s.id_сотрудника
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+
+47. Выбрать все даты, которые есть в базе данных. Результат
+отсортировать в убывающем порядке.
+SELECT дата FROM (
+    SELECT дата_начала AS дата FROM Задачи
+    UNION
+    SELECT дата_завершения_план FROM Задачи
+    UNION
+    SELECT дата_завершения_факт FROM Задачи
+    UNION
+    SELECT дата_начала_разработки FROM Проекты
+    UNION
+    SELECT дата_рождения FROM Сотрудники
+    UNION
+    SELECT дата_вступления FROM Сотрудники_Должность
+    UNION
+    SELECT дата_выхода FROM Сотрудники_Должность
+) d
+WHERE дата IS NOT NULL
+ORDER BY дата DESC;
+
+
+48. Выбрать пары сотрудников, которые работали хотя бы
+над двумя общими проектами.
+WITH emp_proj AS (
+    SELECT DISTINCT it.id_сотрудника, z.id_проекта
+    FROM Исполнители_задач it
+    JOIN Задачи z ON z.id_задачи = it.id_задачи
+)
+SELECT e1.id_сотрудника AS emp1, e2.id_сотрудника AS emp2
+FROM emp_proj e1
+JOIN emp_proj e2 ON e1.id_проекта = e2.id_проекта
+WHERE e1.id_сотрудника < e2.id_сотрудника
+GROUP BY emp1, emp2
+HAVING COUNT(*) >= 2;
+
+
+49. Выбрать дату, которая чаще других встречается в базе
+данных.
+WITH all_dates AS (
+    SELECT дата FROM (
+        SELECT дата_начала AS дата FROM Задачи
+        UNION ALL SELECT дата_завершения_план FROM Задачи
+        UNION ALL SELECT дата_завершения_факт FROM Задачи
+        UNION ALL SELECT дата_начала_разработки FROM Проекты
+        UNION ALL SELECT дата_рождения FROM Сотрудники
+        UNION ALL SELECT дата_вступления FROM Сотрудники_Должность
+        UNION ALL SELECT дата_выхода FROM Сотрудники_Должность
+    ) d WHERE дата IS NOT NULL
+)
+SELECT дата
+FROM all_dates
+GROUP BY дата
+ORDER BY COUNT(*) DESC
+LIMIT 1;
+
+
+50. Выбрать все данные о незавершенных задачах, над кото-
+рыми работают сотрудники, принявшие участие, по крайней мере,
+в 1/3 от всех проектов.
+WITH total_projects AS (
+    SELECT COUNT(*) cnt FROM Проекты
+),
+active_employees AS (
+    SELECT it.id_сотрудника
+    FROM Исполнители_задач it
+    JOIN Задачи z ON z.id_задачи = it.id_задачи
+    GROUP BY it.id_сотрудника
+    HAVING COUNT(DISTINCT z.id_проекта) >=
+           (SELECT cnt / 3.0 FROM total_projects)
+)
+SELECT DISTINCT z.*
+FROM Задачи z
+JOIN Исполнители_задач it ON it.id_задачи = z.id_задачи
+WHERE z.дата_завершения_факт IS NULL
+  AND it.id_сотрудника IN (SELECT id_сотрудника FROM active_employees);
