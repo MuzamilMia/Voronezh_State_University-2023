@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Muzamil Mia\Desktop\3 lab ЧМ\Third Labratory work\GaussianSolver.h(59,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Source.cpp')
+  
+  Third Labratory work.vcxproj -> C:\Users\Muzamil Mia\Desktop\3 lab ЧМ\Third Labratory work\x64\Debug\Third Labratory work.exe
