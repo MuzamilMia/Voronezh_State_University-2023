@@ -1,0 +1,13 @@
+﻿  MyVector.h
+  Source.cpp
+C:\Users\Muzamil Mia\Desktop\Numiric_Methods_Lab1\SolveAlgorithms.h(40,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file 'Source.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\Numiric_Methods_Lab1\Experiments.h(54,44): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+  (compiling source file 'Source.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\Numiric_Methods_Lab1\Experiments.h(109,48): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+  (compiling source file 'Source.cpp')
+  
+  Generating Code...
+  Numiric_Methods_Lab1.vcxproj -> C:\Users\Muzamil Mia\Desktop\Numiric_Methods_Lab1\x64\Debug\Numiric_Methods_Lab1.exe

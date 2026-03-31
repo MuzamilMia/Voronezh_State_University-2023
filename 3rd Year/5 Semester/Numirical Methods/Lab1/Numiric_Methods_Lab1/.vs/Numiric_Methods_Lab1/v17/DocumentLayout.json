@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Experiments.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:Experiments.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\TridiagonalMatrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:TridiagonalMatrix.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\SolveAlgorithms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:SolveAlgorithms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:MyVector.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\ConsoleHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:ConsoleHelper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A823719B-A08C-4ECB-BD63-6E4F7F926919}|Numiric_Methods_Lab1.vcxproj|solutionrelative:file2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SolveAlgorithms.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\SolveAlgorithms.h",
+              "RelativeDocumentMoniker": "SolveAlgorithms.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\SolveAlgorithms.h",
+              "RelativeToolTip": "SolveAlgorithms.h",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAswE8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-01T20:37:28.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TridiagonalMatrix.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\TridiagonalMatrix.h",
+              "RelativeDocumentMoniker": "TridiagonalMatrix.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\TridiagonalMatrix.h",
+              "RelativeToolTip": "TridiagonalMatrix.h",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAswHMAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-01T20:34:50.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "file2.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file2.txt",
+              "RelativeDocumentMoniker": "file2.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file2.txt",
+              "RelativeToolTip": "file2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-01T20:29:30.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ConsoleHelper.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\ConsoleHelper.h",
+              "RelativeDocumentMoniker": "ConsoleHelper.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\ConsoleHelper.h",
+              "RelativeToolTip": "ConsoleHelper.h",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-01T20:06:42.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Experiments.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Experiments.h",
+              "RelativeDocumentMoniker": "Experiments.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Experiments.h",
+              "RelativeToolTip": "Experiments.h",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAqwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-01T19:52:59.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswCsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-01T19:44:35.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MyVector.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\MyVector.h",
+              "RelativeDocumentMoniker": "MyVector.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\MyVector.h",
+              "RelativeToolTip": "MyVector.h",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAswFMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-22T19:32:50.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file.txt",
+              "RelativeDocumentMoniker": "file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Numiric_Methods_Lab1\\file.txt",
+              "RelativeToolTip": "file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-10-01T20:46:07.981Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
