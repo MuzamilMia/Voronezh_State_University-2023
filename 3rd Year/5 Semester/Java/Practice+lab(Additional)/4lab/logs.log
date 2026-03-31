@@ -1,0 +1,8 @@
+Nov 15, 2025 11:47:47 AM service.ProfileService createFile
+INFO: File data.txt was created
+Nov 15, 2025 11:48:43 AM service.ProfileService loadFile
+SEVERE: Error with loading a file: Incorrect format of file checksum.
+Nov 15, 2025 11:49:02 AM ui.ConsoleInterface getCommand
+WARNING: Incorrect command
+Nov 15, 2025 11:49:11 AM service.ProfileService save
+INFO: File data.txt was saved
