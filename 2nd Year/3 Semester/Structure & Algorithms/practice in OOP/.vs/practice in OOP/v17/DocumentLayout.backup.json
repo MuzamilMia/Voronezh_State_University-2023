@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\practice in OOP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82B86D26-C873-4296-BDBF-E6EEE5672F10}|practice in OOP.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\practice in OOP\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{82B86D26-C873-4296-BDBF-E6EEE5672F10}|practice in OOP.vcxproj|solutionrelative:source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\practice in OOP\\source.cpp",
+              "RelativeDocumentMoniker": "source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\practice in OOP\\source.cpp",
+              "RelativeToolTip": "source.cpp",
+              "ViewState": "AgIAAGgAAACAoZmZmRkWwEMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-01T16:19:56.815Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

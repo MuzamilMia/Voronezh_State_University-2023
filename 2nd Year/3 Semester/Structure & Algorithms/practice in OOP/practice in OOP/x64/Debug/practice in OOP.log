@@ -1,0 +1,4 @@
+﻿  source.cpp
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\practice in OOP\source.cpp(34,31): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\practice in OOP\source.cpp(35,35): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  practice in OOP.vcxproj -> C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\practice in OOP\x64\Debug\practice in OOP.exe

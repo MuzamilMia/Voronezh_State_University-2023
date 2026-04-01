@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5595-6A9D-41BB-B29C-65F123909B5E}|Third Lab. Trees\\Third Lab. Trees.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\Treeslab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{EADA5595-6A9D-41BB-B29C-65F123909B5E}|Third Lab. Trees\\Third Lab. Trees.vcxproj|solutionrelative:Third Lab. Trees\\Treeslab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EADA5595-6A9D-41BB-B29C-65F123909B5E}|Third Lab. Trees\\Third Lab. Trees.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EADA5595-6A9D-41BB-B29C-65F123909B5E}|Third Lab. Trees\\Third Lab. Trees.vcxproj|solutionrelative:Third Lab. Trees\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\file.txt",
+              "RelativeDocumentMoniker": "Third Lab. Trees\\file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\file.txt",
+              "RelativeToolTip": "Third Lab. Trees\\file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-21T20:43:42.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Treeslab2.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\Treeslab2.cpp",
+              "RelativeDocumentMoniker": "Third Lab. Trees\\Treeslab2.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\Second Lab. Trees\\Third Lab. Trees\\Treeslab2.cpp",
+              "RelativeToolTip": "Third Lab. Trees\\Treeslab2.cpp",
+              "ViewState": "AgIAANMAAAAAAAAAAAAcwNoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-21T20:05:52.02Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
