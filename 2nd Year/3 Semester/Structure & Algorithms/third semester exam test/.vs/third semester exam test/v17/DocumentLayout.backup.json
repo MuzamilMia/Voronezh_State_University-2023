@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD123E86-8F14-4F6D-8DC9-8287880741A3}|third semester exam test.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\KUM_1 Muzamil Mia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FD123E86-8F14-4F6D-8DC9-8287880741A3}|third semester exam test.vcxproj|solutionrelative:KUM_1 Muzamil Mia.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD123E86-8F14-4F6D-8DC9-8287880741A3}|third semester exam test.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FD123E86-8F14-4F6D-8DC9-8287880741A3}|third semester exam test.vcxproj|solutionrelative:file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\file.txt",
+              "RelativeDocumentMoniker": "file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\file.txt",
+              "RelativeToolTip": "file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-01-24T19:54:38.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KUM_1 Muzamil Mia.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\KUM_1 Muzamil Mia.cpp",
+              "RelativeDocumentMoniker": "KUM_1 Muzamil Mia.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\third semester exam test\\KUM_1 Muzamil Mia.cpp*",
+              "RelativeToolTip": "KUM_1 Muzamil Mia.cpp*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-24T12:39:54.548Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

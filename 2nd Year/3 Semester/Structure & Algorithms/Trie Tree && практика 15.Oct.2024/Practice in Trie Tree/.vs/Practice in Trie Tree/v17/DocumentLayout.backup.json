@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4B495633-3C98-4B5E-9D60-5E84E955B054}|Practice in Trie Tree\\Practice in Trie Tree.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4B495633-3C98-4B5E-9D60-5E84E955B054}|Practice in Trie Tree\\Practice in Trie Tree.vcxproj|solutionrelative:Practice in Trie Tree\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B495633-3C98-4B5E-9D60-5E84E955B054}|Practice in Trie Tree\\Practice in Trie Tree.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4B495633-3C98-4B5E-9D60-5E84E955B054}|Practice in Trie Tree\\Practice in Trie Tree.vcxproj|solutionrelative:Practice in Trie Tree\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\file.txt",
+              "RelativeDocumentMoniker": "Practice in Trie Tree\\file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\file.txt",
+              "RelativeToolTip": "Practice in Trie Tree\\file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-22T13:16:31.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\source.cpp",
+              "RelativeDocumentMoniker": "Practice in Trie Tree\\source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\c \u002B\u002B\\Third Semester\\Practice in Trie Tree\\Practice in Trie Tree\\source.cpp*",
+              "RelativeToolTip": "Practice in Trie Tree\\source.cpp*",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAwwHIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-22T12:20:15.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+﻿  source.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664: '_Result std::mem_fun_t<_Result,ELEM>::operator ()(_Ty *) const': cannot convert argument 1 from 'ELEM' to '_Ty *'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:             _Result=void,
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:             _Ty=ELEM
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         and
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:             _Ty=ELEM
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9): error C2664:         ]
+  (compiling source file 'source.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,15):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\functional(423,13):
+      see declaration of 'std::mem_fun_t<void,ELEM>::operator ()'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9):
+      while trying to match the argument list '(ELEM)'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\algorithm(435,9):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\STL. Dec.17.2024\source.cpp(113,7):
+          see reference to function template instantiation '_Fn std::for_each<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,std::mem_fun_t<void,_Ty>>(_InIt,_InIt,_Fn)' being compiled
+          with
+          [
+              _Fn=std::mem_fun_t<void,ELEM>,
+              _Ty=ELEM,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<ELEM>>>
+          ]
+  
