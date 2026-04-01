@@ -1,0 +1,89 @@
+jon
+The Art of Programming
+1998
+500
+Computer
+---
+ali
+Introduction to Machine Learning
+2010
+350
+Artificial Intelligence
+---
+brown
+Data Structures and Algorithms
+2005
+600
+Science
+---
+sarah
+History of Philosophy
+1995
+400
+Philosophy
+---
+david
+Fundamentals of Physics
+2015
+800
+Physics
+---
+jassica 
+Modern Art: A Comprehensive Guide
+2008
+450
+Art
+---
+taylor
+The History of Mathematics
+2012
+700
+Mathematics
+---
+amanda
+The Great Novels of Russian Literature
+2003
+550
+Literature
+---
+wilson
+Chemistry: Principles and Applications
+2017
+750
+Chemistry
+---
+martinez
+Introduction to Economics
+2006
+400
+Economics
+---
+daniel
+The History of World War II
+1990
+900
+History
+---
+anderson
+Introduction to Psychology
+2019
+600
+Psychology
+---
+Kevin Thomas
+Programming in Python
+2014
+350
+Science
+---
+Rachel Harris
+Essentials of Biology
+2011
+550
+Biology
+---
+Samuel Moore
+The Art of Negotiation
+2009
+400
+Business

@@ -1,0 +1,3 @@
+﻿  dfg.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+  practicccc.vcxproj -> C:\Users\Muzamil Mia\Desktop\km\lab\x64\Debug\practicccc.exe

@@ -1,0 +1,26 @@
+1. Дано Trie-дерево. Посчитать количество слов, начинающихся с заданной подстроки.
+
+int count_words(TrieTree root)
+{
+    if (!root) return 0;
+    
+    int count = root->eow ? 1 : 0; 
+    for (int i = 0; i < 26; ++i)
+    {
+        if (root->ptrs[i])
+            count += count_words(root->ptrs[i]); 
+    }
+    return count;
+}
+
+int count_with_prefix(TrieTree root, const std::string& prefix, int i = 0)
+{
+    if (!root) return 0; 
+    if (i == prefix.length())
+        return count_words(root); 
+
+    int index = prefix[i] - 'a';
+    return count_with_prefix(root->ptrs[index], prefix, i + 1); 
+}
+-----------------------------------------------------------------------------------
+

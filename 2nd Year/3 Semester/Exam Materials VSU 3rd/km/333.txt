@@ -1,0 +1,182 @@
+8
+Иванов Иван Иванович
+Course: 1
+Group: 9
+Form of Education: Budget
+Average Grade: 4.20
+1 session:
+Math-4
+History-5
+Pashto-4
+Geopraphy-4
+Physics-5
+2 session:
+Socilaogy-4
+Pashto-4
+Art-4
+WebDev-4
+CSharp-4
+
+Петров Петр Петрович
+Course: 1
+Group: 9
+Form of Education: Budget
+Average Grade: 4.70
+1 session:
+Mathematics-5
+History-5
+Science-5
+English-5
+Art-5
+2 session:
+Math-4
+History-5
+Pashto-4
+Geopraphy-4
+Physics-5
+
+Базакин Егор Андреевич
+Course: 2
+Group: 9
+Form of Education: Budget
+Average Grade: 4.85
+1 session:
+math-5
+it-5
+dm-5
+la-5
+pe-5
+2 session:
+mMath-4
+History-5
+Pashto-4
+Geopraphy-4
+Physics-5
+3 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+4 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+
+Володин Никита Романович
+Course: 2
+Group: 61
+Form of Education: Budget
+Average Grade: 5.00
+1 session:
+Mathematics-5
+Economics-5
+Art-5
+Philosophy-5
+Math-5
+2 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+3 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+4 session:
+Mathematics-5
+Economics-5
+Art-5
+Philosophy-5
+Math-5
+
+Егоров Егор Егорович
+Course: 1
+Group: 1
+Form of Education: Contract
+Average Grade: 4.10
+1 session:
+Math-4
+Biology-5
+Physics-4
+Chemistry-5
+Art-4
+2 session:
+Sociology-4
+Geography-3
+Computer Science-4
+History-4
+Philosophy-4
+
+Muzamil Mia
+Course: 1
+Group: 1
+Form of Education: Contract
+Average Grade: 4.10
+1 session:
+Math-4
+Biology-5
+Physics-4
+Chemistry-5
+Art-4
+2 session:
+Sociology-4
+Geography-3
+Computer Science-4
+History-4
+Philosophy-4
+
+Khan Kandahari
+Course: 1
+Group: 9
+Form of Education: Budget
+Average Grade: 4.20
+1 session:
+Math-4
+History-5
+Pashto-4
+Geopraphy-4
+Physics-5
+2 session:
+Socilaogy-4
+Pashto-4
+Art-4
+WebDev-4
+CSharp-4
+
+Igore Khan
+Course: 2
+Group: 9
+Form of Education: Budget
+Average Grade: 4.85
+1 session:
+math-5
+it-5
+dm-5
+la-5
+pe-5
+2 session:
+mMath-4
+History-5
+Pashto-4
+Geopraphy-4
+Physics-5
+3 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+4 session:
+Geography-5
+Economics-5
+Philosophy-5
+Literature-5
+Philosophy-5
+
+
