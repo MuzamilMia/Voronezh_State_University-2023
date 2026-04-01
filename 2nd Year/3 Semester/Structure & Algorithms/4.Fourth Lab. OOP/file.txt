@@ -1,0 +1,75 @@
+John Smith
+The Art of Programming
+1998
+500
+Computer Science
+Emily Johnson
+Introduction to Machine Learning
+2010
+350
+Artificial Intelligence
+Michael Brown
+Data Structures and Algorithms
+2005
+600
+Computer Science
+Sarah Williams
+History of Philosophy
+1995
+400
+Philosophy
+David Miller
+Fundamentals of Physics
+2015
+800
+Physics
+Jessica Davis
+Modern Art: A Comprehensive Guide
+2008
+450
+Art
+Matthew Taylor
+The History of Mathematics
+2012
+700
+Mathematics
+Amanda White
+The Great Novels of Russian Literature
+2003
+550
+Literature
+Christopher Wilson
+Chemistry: Principles and Applications
+2017
+750
+Chemistry
+Jennifer Martinez
+Introduction to Economics
+2006
+400
+Economics
+Daniel Thompson
+The History of World War II
+1990
+900
+History
+Laura Anderson
+Introduction to Psychology
+2019
+600
+Psychology
+Kevin Thomas
+Programming in Python
+2014
+350
+Computer Science
+Rachel Harris
+Essentials of Biology
+2011
+550
+Biology
+Samuel Moore
+The Art of Negotiation
+2009
+400
+Business
