@@ -1,0 +1,81 @@
+// --------- KUM 3.
+
+//--- task1 --- добавления нового яруса нулевых листьев.
+void add_zero_lvl(btree::ptrNODE node)
+{
+	if (!node) return;
+
+	else if (!node->left && !node->right)
+	{
+		node->left = new btree::NODE(0);
+		node->right = new btree::NODE(0);
+	}
+	else
+	{
+		add_zero_lvl(node->left); add_zero_lvl(node->right);
+	}
+}
+//---------------------------------------------------------
+//task2--- суммы элементов от корня до первого четного (включительно) по каждой 
+//ветке (каждый элемент включается в сумму один раз). 
+
+int sum_chet(btree::BTREE& t)
+{
+	int res{};
+	std::stack<btree::ptrNODE> st;
+	if (t.get_root()->info % 2 == 1) st.push(t.get_root());
+	while (!st.empty())
+	{
+		btree::ptrNODE cur = st.top();
+		st.pop();
+		res += cur->info;
+		if (cur->right != nullptr && cur->right->info % 2 == 1)
+			st.push(cur->right);
+		if (cur->left != nullptr && cur->left->info % 2 == 1)
+			st.push(cur->left);
+	}
+	return res;
+}
+//---------- task 3 ----
+//Deleting the last charachter. 
+
+void del_last_letter(ttree::TTREE& tree, ttree::ptrNODE& root)
+{
+	if (root)
+	{
+		for (int i = 0; i < 26; ++i)
+		{
+			if (root->ptrs[i])
+			{
+				if (root->ptrs[i]->eow)
+				{
+					delete root->ptrs[i];
+					root->ptrs[i] = nullptr;
+					root->eow = true;
+				}
+				else
+					del_last_letter(tree, root->ptrs[i]);
+			}
+		}
+	}
+}
+
+ttree::TTREE trie_tree("trie.txt");
+trie_tree.print(true);
+ttree::ptrNODE root1 = trie_tree.get_root();
+del_last_letter(trie_tree, root1);
+trie_tree.print("");
+
+//-------OOP ---
+A operator+ (A a1, A a2) 
+{
+    A a3(a1.geta() + a2.geta(), a1.getb() + a2.getb());
+    return a3;
+}
+//main----
+A a1(2, 1);
+A a2(1, 2);
+a1.print(); a2.print();
+A a3 = a1 + a2;
+a3.print();
+

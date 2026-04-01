@@ -1,0 +1,59 @@
+//https://chatgptchatapp.com/
+#include"Binary_Tree.h"
+#include"Trie_Tree.h"
+#include<stack>
+#include<queue>
+
+// ------------ task1 --------------
+
+// ------------ task2 --------------
+
+// ------------ task3 --------------
+
+// ------------ task4 --------------
+
+
+
+int  main()
+{
+	btree::BTREE root("file.txt");
+	root.print();
+	//-------------------------------------------------
+	std::cout << "\n My task 1 is: \n";
+	//task1
+
+	std::cout << "\n My task 2 is: \n";
+	//task2
+
+	//-------------------------------------------------
+	std::cout << '\n';
+	ttree::TTREE trie_tree("trie.txt");
+	trie_tree.print(true);
+	//-------------------------------------------------
+	std::cout << "My task 3 is: \n";
+	//task3
+
+
+	//-------------------------------------------------
+	std::cout << "My task 4 is: \n";
+	//task4
+
+	std::cin.get();
+	return 0;
+}
+
+// Modull password and username. 
+//06235563
+//WRmDoL74Y7
+//--------------------------
+
+Elem& operator+=(Elem& el1, Elem& el2)
+{
+	el1.set_value(el1.get_value() + el2.get_value());
+	return el1;
+}
+//main
+Elem a(30);
+Elem b(20);
+a += b;
+std::cout << a.get_value() << "\n";

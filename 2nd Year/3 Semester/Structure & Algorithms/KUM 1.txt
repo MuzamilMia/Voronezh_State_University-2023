@@ -1,0 +1,122 @@
+#include "Binary_Tree.h"
+#include "Trie_Tree.h"
+#include <stack>
+//----------------KUM_1.
+// Task 1: Recursive function to delete all elements below a specified level.
+void delete_below_level(btree::ptrNODE& node, int current_level, int target_level)
+{
+    if (!node || current_level >= target_level)
+        return;
+
+    delete_below_level(node->left, current_level + 1, target_level);
+    delete_below_level(node->right, current_level + 1, target_level);
+    if (current_level == target_level - 1)
+    {
+        delete node->left;
+        delete node->right;
+        node->left = node->right = nullptr;
+    }
+}
+
+//-----------------------------------------------------
+//also the second question. sum
+int branch_sum(btree::ptrNODE root)
+{
+    if (!root) 
+        return 0;
+
+    std::stack<std::pair<btree::ptrNODE, int>> st; 
+    int totalSum{}; 
+
+    st.push({ root, 0 }); 
+
+    while (!st.empty())
+    {
+        root = st.top().first;
+        int currentSum = st.top().second;
+        st.pop();
+        currentSum += root->info;
+
+        if (root->info % 2 != 0)
+        {
+            totalSum += currentSum - root->info; 
+            continue; 
+        }
+
+        if (!root->left && !root->right)
+        {
+            totalSum += currentSum;
+            continue;
+        }
+        if (root->right)
+            st.push({ root->right, currentSum });
+        if (root->left)
+            st.push({ root->left, currentSum });
+    }
+
+    return totalSum; 
+}
+//-----------------------------------------------------
+// Task 2: Non-recursive function to find the sum of elements from root to the first odd element.
+void branch_sum_to_first_odd(btree::BTREE& tree)
+{
+    if (tree.empty()) return;
+
+    std::stack<std::pair<btree::ptrNODE, int>> stack;
+    stack.push({tree.get_root(), 0}); // Push the root node and initial sum.
+
+    while (!stack.empty())
+    {
+        auto [current, sum] = stack.top();
+        stack.pop();
+
+        if (current->info % 2 != 0) // Stop at the first odd element.
+        {
+            std::cout << "Sum to first odd: " << sum << std::endl;
+            continue;
+        }
+
+        // Add the current node's value to the sum.
+        sum += current->info;
+
+        // Push child nodes onto the stack (right first for DFS order).
+        if (current->right)
+            stack.push({current->right, sum});
+        if (current->left)
+            stack.push({current->left, sum});
+    }
+}
+
+// Task 3: Copy a trie and append 'a' to the end of each word.
+ttree::ptrNODE copy_and_append_a(ttree::ptrNODE node, std::string word = "")
+{
+    if (!node) return nullptr;
+
+    ttree::ptrNODE new_node = new ttree::NODE();
+    new_node->eow = node->eow;
+
+    for (int i = 0; i < 26; ++i)
+    {
+        if (node->ptrs[i])
+        {
+            new_node->ptrs[i] = copy_and_append_a(node->ptrs[i], word + char('a' + i));
+        }
+    }
+
+    // If this node marks the end of a word, append 'a' in the copy.
+    if (node->eow)
+    {
+        ttree::ptrNODE temp = new_node;
+        for (char ch : word + 'a')
+        {
+            if (!temp->ptrs[ch - 'a'])
+                temp->ptrs[ch - 'a'] = new ttree::NODE();
+            temp = temp->ptrs[ch - 'a'];
+        }
+        temp->eow = true;
+    }
+
+    return new_node;
+}
+
+

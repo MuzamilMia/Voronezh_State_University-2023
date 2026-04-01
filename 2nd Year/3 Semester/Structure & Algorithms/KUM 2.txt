@@ -1,0 +1,67 @@
+#include "Binary_Tree.h"
+#include "Trie_Tree.h"
+#include <queue>
+#include <iostream>
+#include <string>
+//----------- KUM_2 ------ 
+// Task 1: Recursive function to delete all elements after the first even element in each branch.
+void delete_First_even_number(btree::ptrNODE root)
+{
+    if (root)
+    {
+        if (root->info % 2 == 0)
+        {
+            delete root->left;
+            delete root->right;
+            root->left = root->right = nullptr;
+        }
+        delete_oddnumber(root->left);
+        delete_oddnumber(root->right);
+    }
+}
+//---------------------------------------------
+// Task 2: Non-recursive function to find the sum of elements at and below a given level.
+int task2(btree::ptrNODE root, int targetlevel)
+{
+    int result{};
+    int cur_level = 0;
+    std::queue<std::pair<btree::ptrNODE, int >>que;
+    que.push({ root,0 });
+    while (!que.empty())
+    {
+        root = que.front().first;
+        cur_level = que.front().second;
+        que.pop();
+
+        if (cur_level >= targetlevel)
+        {
+            result += root->info;
+        }
+        if (root->left)
+            que.push({ root->left, cur_level + 1 });
+        if (root->right)
+            que.push({ root->right, cur_level + 1 });
+       
+    }
+    return result;
+}
+//------------------------------------
+// Task 3: Copy a trie tree and remove the last character of each word.
+ttree::ptrNODE copy_and_remove_last(ttree::ptrNODE node, std::string word = "")
+{
+    if (!node) return nullptr;
+
+    ttree::ptrNODE new_node = new ttree::NODE();
+    new_node->eow = node->eow && !word.empty();  is non-empty.
+
+    for (int i = 0; i < 26; ++i)
+    {
+        if (node->ptrs[i])
+        {
+            std::string next_word = word + char('a' + i);
+            new_node->ptrs[i] = copy_and_remove_last(node->ptrs[i], next_word);
+        }
+    }
+
+    return new_node;
+}

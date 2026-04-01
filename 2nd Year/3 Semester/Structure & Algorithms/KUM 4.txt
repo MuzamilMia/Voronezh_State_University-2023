@@ -1,0 +1,80 @@
+//-------------------- KUM 4 ----------
+// удаления яруса листьев
+btree::ptrNODE removeLeaves(btree::ptrNODE root) 
+{
+	if (root == nullptr) {
+		return nullptr;
+	}
+	if (root->left == nullptr && root->right == nullptr) {
+		delete root; 
+		return nullptr; 
+	}
+
+	root->left = removeLeaves(root->left);
+	root->right = removeLeaves(root->right);
+
+	return root;
+}
+
+//---------------- task2 -----------------------
+//суммы элементов от корня до заданного уровня
+
+int sum_fromroot(btree::ptrNODE root, int targetlevel)
+{
+	int result{};
+	int culevel{};
+	std::queue < std::pair<btree::ptrNODE, int>> st;
+	st.push({ root,0 });
+	while (!st.empty())
+	{
+		root = st.front().first;
+		culevel = st.front().second;
+		st.pop();
+
+		if (targetlevel >= culevel)
+			result += root->info;
+		if (root->left)
+			st.push({ root->left, culevel + 1 });
+		if (root->right)
+			st.push({ root->right, culevel + 1 });
+	}
+	return result;
+}
+//-------------- task 3 -----------------
+void doubleLastChar(ttree::TTREE& tree, ttree::ptrNODE& root)
+{
+	if (root)
+	{
+		for (int i = 0; i < 26; ++i)
+		{
+			if (root->ptrs[i])
+			{
+				if (root->ptrs[i]->eow)
+				{
+					root->ptrs[i]->ptrs[i] = new ttree::NODE();
+					root->ptrs[i]->eow = false;
+					root->ptrs[i]->ptrs[i]->eow = true;
+
+				}
+				else
+					doubleLastChar(tree, root->ptrs[i]);
+			}
+		}
+	}
+}
+ttree::TTREE trie_tree("trie.txt");	trie_tree.print(true);
+ttree::ptrNODE root1 = trie_tree.get_root();	doubleLastChar(trie_tree, root1);	trie_tree.print("");
+
+//--------------------OOP ---------------
+A operator+ (A a1, A a2) 
+{
+    A a3(a1.geta() + a2.geta(), a1.getb() + a2.getb());
+    return a3;
+}
+//main----
+A a1(2, 1);
+A a2(1, 2);
+a1.print(); a2.print();
+A a3 = a1 + a2;
+a3.print();
+
