@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|solutionrelative:Binary Trees. Sep.11.2024\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|solutionrelative:Binary Trees. Sep.11.2024\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{491CDA7A-F3C5-46E8-9D8D-01E83CE5BF1C}|Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024.vcxproj|solutionrelative:Binary Trees. Sep.11.2024\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\test.cpp",
+              "RelativeDocumentMoniker": "Binary Trees. Sep.11.2024\\test.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\test.cpp",
+              "RelativeToolTip": "Binary Trees. Sep.11.2024\\test.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-08T14:50:10.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\file.txt",
+              "RelativeDocumentMoniker": "Binary Trees. Sep.11.2024\\file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\file.txt",
+              "RelativeToolTip": "Binary Trees. Sep.11.2024\\file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-24T08:48:21.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\source.cpp",
+              "RelativeDocumentMoniker": "Binary Trees. Sep.11.2024\\source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\University\\3 Sem. Labs\\Third Sem. Structure and algo\\Binary Trees. Sep.11.2024\\Binary Trees. Sep.11.2024\\source.cpp*",
+              "RelativeToolTip": "Binary Trees. Sep.11.2024\\source.cpp*",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAAAH0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-17T08:35:00.55Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
