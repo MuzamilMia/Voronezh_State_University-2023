@@ -1,0 +1,101 @@
+//using System;
+
+//namespace ConsoleApp
+//{
+//    class Program
+//    {
+//        // Функция для проверки, является ли число простым
+//        public static bool IsPrime(int number)
+//        {
+//            if (number < 2) return false;
+//            for (int i = 2; i <= Math.Sqrt(number); i++)
+//            {
+//                if (number % i == 0) return false;
+//            }
+//            return true;
+//        }
+
+//        // Функция для поиска непростых чисел в заданном столбце
+//        public static int[] FindNonPrimesInColumn(int[,] matrix, int n, int column, ref int[,] originalMatrix, out int resultSize)
+//        {
+//            originalMatrix = matrix; // передача исходной матрицы по ссылке
+//            int[] temp = new int[n]; // временный массив для хранения непростых чисел
+//            int count = 0;
+
+//            for (int row = 0; row < n; row++)
+//            {
+//                int num = matrix[row, column];
+//                if (!IsPrime(num))
+//                {
+//                    temp[count++] = num; // добавляем непростое число в массив
+//                }
+//            }
+
+//            // Создаем массив только для найденных непростых чисел
+//            int[] nonPrimes = new int[count];
+//            Array.Copy(temp, nonPrimes, count); // копируем только найденные элементы
+//            resultSize = count; // передаем размер массива результатов через out
+
+//            return nonPrimes;
+//        }
+
+//        // Функция для печати матрицы
+//        public static void PrintMatrix(int[,] matrix, int n)
+//        {
+//            Console.WriteLine("\nМатрица:");
+//            for (int i = 0; i < n; i++)
+//            {
+//                for (int j = 0; j < n; j++)
+//                {
+//                    Console.Write($"{matrix[i, j],5} ");
+//                }
+//                Console.WriteLine();
+//            }
+//        }
+
+//        static void Main()
+//        {
+//            Console.Write("Введите размер матрицы n: ");
+//            int n = int.Parse(Console.ReadLine());
+
+//            int[,] matrix = new int[n, n];
+//            Console.WriteLine("Введите элементы матрицы:");
+
+//            // Заполнение матрицы
+//            for (int i = 0; i < n; i++)
+//            {
+//                for (int j = 0; j < n; j++)
+//                {
+//                    Console.Write($"Элемент [{i},{j}]: ");
+//                    matrix[i, j] = int.Parse(Console.ReadLine());
+//                }
+//            }
+
+//            // Печать введенной матрицы
+//            PrintMatrix(matrix, n);
+
+//            Console.Write("Введите номер столбца для поиска непростых чисел (1 до n): ");
+//            int column = int.Parse(Console.ReadLine()) - 1; // Уменьшаем на 1 для индексации массива
+
+//            if (column < 0 || column >= n)
+//            {
+//                Console.WriteLine("Ошибка: Неверный номер столбца!");
+//                return;
+//            }
+
+//            int[,] originalMatrix = null;
+//            int resultSize;
+
+//            // Вызов функции для поиска непростых чисел в указанном столбце
+//            int[] nonPrimes = FindNonPrimesInColumn(matrix, n, column, ref originalMatrix, out resultSize);
+
+//            // Вывод результатов
+//            Console.WriteLine($"\nНепростые числа в столбце {column + 1}:");
+//            for (int i = 0; i < resultSize; i++)
+//            {
+//                Console.Write($"{nonPrimes[i]} ");
+//            }
+//            Console.WriteLine();
+//        }
+//    }
+//}

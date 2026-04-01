@@ -1,0 +1,11 @@
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\bin\Debug\_7.Labbb.exe.config
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\bin\Debug\_7.Labbb.exe
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\bin\Debug\_7.Labbb.pdb
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\7. Labbb.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\_7.Labbb.Form1.resources
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\_7.Labbb.Properties.Resources.resources
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\7. Labbb.csproj.GenerateResource.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\7. Labbb.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\_7.Labbb.exe
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\_7.Labbb.pdb
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\7. Labbb\obj\Debug\_7.Labbb.AddStudent.resources

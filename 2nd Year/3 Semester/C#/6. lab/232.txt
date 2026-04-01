@@ -1,0 +1,38 @@
+//internal class Matrix
+//{
+//    private int[,] matrix; // Исходная матрица
+//    private int size;      // Размер матрицы
+
+//    // Конструктор
+//    public Matrix(int size)
+//    {
+//        this.size = size;
+//        matrix = new int[size, size];
+//    }
+
+//    // Метод для установки элемента матрицы
+//    public void SetElement(int row, int col, int value)
+//    {
+//        matrix[row, col] = value;
+//    }
+
+//    // Метод для получения элемента матрицы
+//    public int GetElement(int row, int col)
+//    {
+//        return matrix[row, col];
+//    }
+
+//    // Метод для обработки матрицы (пример: транспонирование)
+//    public int[,] ProcessMatrix()
+//    {
+//        int[,] result = new int[size, size];
+//        for (int i = 0; i < size; i++)
+//        {
+//            for (int j = 0; j < size; j++)
+//            {
+//                result[i, j] = matrix[j, i]; // Транспонирование
+//            }
+//        }
+//        return result;
+//    }
+//}

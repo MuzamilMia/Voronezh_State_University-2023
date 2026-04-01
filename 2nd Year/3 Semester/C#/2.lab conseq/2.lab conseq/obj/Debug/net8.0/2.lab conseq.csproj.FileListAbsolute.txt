@@ -1,0 +1,14 @@
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\bin\Debug\net8.0\2.lab conseq.exe
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\bin\Debug\net8.0\2.lab conseq.deps.json
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\bin\Debug\net8.0\2.lab conseq.runtimeconfig.json
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\bin\Debug\net8.0\2.lab conseq.dll
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\bin\Debug\net8.0\2.lab conseq.pdb
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.AssemblyInfoInputs.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.AssemblyInfo.cs
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.dll
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\refint\2.lab conseq.dll
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.pdb
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\2.lab conseq.genruntimeconfig.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\2.lab conseq\2.lab conseq\obj\Debug\net8.0\ref\2.lab conseq.dll

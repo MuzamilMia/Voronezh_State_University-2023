@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\C# Third Semester\\4.Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27531969-9499-49C5-87BE-53480A5C6ED2}|4.Lab\\4.Lab..csproj|c:\\users\\muzamil mia\\desktop\\c# third semester\\4.lab\\4.lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27531969-9499-49C5-87BE-53480A5C6ED2}|4.Lab\\4.Lab..csproj|solutionrelative:4.lab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\C# Third Semester\\4.Lab\\4.Lab\\Program.cs",
+              "RelativeDocumentMoniker": "4.Lab\\Program.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\C# Third Semester\\4.Lab\\4.Lab\\Program.cs",
+              "RelativeToolTip": "4.Lab\\Program.cs",
+              "ViewState": "AgIAAJsBAACAJyIiIiIqwKABAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:03:31.274Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

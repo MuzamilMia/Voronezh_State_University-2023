@@ -1,0 +1,10 @@
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\bin\Debug\_6.lab.exe.config
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\bin\Debug\_6.lab.exe
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\bin\Debug\_6.lab.pdb
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\6. lab.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\_6.lab.Form1.resources
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\_6.lab.Properties.Resources.resources
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\6. lab.csproj.GenerateResource.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\6. lab.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\_6.lab.exe
+C:\Users\Muzamil Mia\Desktop\C# Third Semester\6. lab\obj\Debug\_6.lab.pdb

@@ -1,0 +1,100 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        // Проверка ввода
+        public static void Check(out double input)
+        {
+            while (!double.TryParse(Console.ReadLine(), out input))
+            {
+                Console.WriteLine("\nДанные не корректны, повторите ввод!\n");
+            }
+        }
+        // Проверка интервала
+        public static void ReadAndCheck(out double x, double a, double b)
+        {
+            Check(out x);
+            while (!(x > a && x < b))
+            {
+                Console.WriteLine("\nДанные не входят в необходимый интервал, повторите ввод!\n");
+                Check(out x);
+            }
+        }
+
+        static void Main()
+        {
+            double x0, xn, h, e;
+            Console.WriteLine("Введите x0 (-1; 1): ");
+            ReadAndCheck(out x0, -1, 1);
+
+            Console.WriteLine("Введите xn (-1; 1): ");
+            ReadAndCheck(out xn, -1, 1);
+            while (xn <= x0)
+            {
+                Console.WriteLine("Ошибка ввода, правая граница должна быть больше левой!\n");
+                ReadAndCheck(out x0, -1, 1);
+                ReadAndCheck(out xn, -1, 1);
+            }
+            Console.WriteLine("Введите шаг h: ");
+            ReadAndCheck(out h, 0, 1);
+            Console.WriteLine("Введите точность e: ");
+            ReadAndCheck(out e, 0, 1);
+            Console.WriteLine();
+
+            // Calculate the number of steps needed to reach xn from x0 with step h
+            int steps = (int)Math.Ceiling((xn - x0) / h) + 1;
+
+            // Строки для форматированного вывода
+            string s_x = "\tx\t";
+            string s_series = "f(x) вычисл.    ";
+            string s_formul = "f(x) по формуле ";
+
+            for (int i = 0; i < steps; i++)
+            {
+                double x = x0 + i * h;
+
+                // Adjust x to be exactly xn on the last step
+                if (x > xn) x = xn;
+
+                s_x += $"{x,10:f6}";
+
+                // Exact formula value
+                double exactValue = 1 / Math.Sqrt(1 - x * x);
+                s_formul += $"{exactValue,10:f6}";
+
+                // Series approximation
+                double res = 1; // Initial term is 1
+                double term = 1; // First term
+                int n = 1; // Used for factorial-like pattern
+
+                while (Math.Abs(exactValue - res) > e)
+                {
+                    term *= (double)(2 * n - 1) / (2 * n); // Calculate next coefficient
+                    term *= x * x; // Multiply by x^2 for each term
+                    res += term;
+                    n++;
+                }
+
+                s_series += $"{res,10:f6}";
+
+                if (s_x.Length >= 100)
+                {
+                    Console.WriteLine(s_x);
+                    Console.WriteLine(s_series);
+                    Console.WriteLine(s_formul);
+                    Console.WriteLine();
+
+                    s_x = "\tx\t"; s_series = "f(x) вычисл.    ";
+                    s_formul = "f(x) по формуле ";
+                }
+            }
+
+            // Final output for last segment if needed
+            Console.WriteLine(s_x);
+            Console.WriteLine(s_series);
+            Console.WriteLine(s_formul);
+        }
+    }
+}
