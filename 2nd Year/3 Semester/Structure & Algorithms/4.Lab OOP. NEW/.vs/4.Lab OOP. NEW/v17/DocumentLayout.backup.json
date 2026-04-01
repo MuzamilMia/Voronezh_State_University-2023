@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:FList.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:FList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:Book.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{CEAE1203-B483-4C5A-BB9E-A81461E7AD87}|4.Lab OOP. NEW.vcxproj|solutionrelative:Book.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\file.txt",
+              "RelativeDocumentMoniker": "file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\file.txt",
+              "RelativeToolTip": "file.txt",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwEoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-27T21:39:53.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.h",
+              "RelativeDocumentMoniker": "Book.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.h",
+              "RelativeToolTip": "Book.h",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwB8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-16T18:24:23.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Book.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.cpp",
+              "RelativeDocumentMoniker": "Book.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Book.cpp",
+              "RelativeToolTip": "Book.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-16T18:24:26.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FList.h",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.h",
+              "RelativeDocumentMoniker": "FList.h",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.h",
+              "RelativeToolTip": "FList.h",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-16T18:24:34.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FList.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.cpp",
+              "RelativeDocumentMoniker": "FList.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\FList.cpp",
+              "RelativeToolTip": "FList.cpp",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-16T18:24:32.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\Third Sem. Structure and algo\\4.Lab OOP. NEW\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAADsAAAAAAAAAAAAcwD0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-16T18:24:39.047Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
