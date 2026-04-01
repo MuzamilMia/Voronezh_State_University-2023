@@ -1,0 +1,120 @@
+.container{
+    height: 850px;
+    width: 840px;
+    display: grid;
+    grid-template-columns: 150px 150px 200px 200px 100px;
+    grid-template-rows: 130px 130px 130px 130px 160px 120px;
+    gap: 10px;
+    background-color: black;
+   }
+
+   body{
+    display: inline-flex;
+    margin-left: 200px;
+    margin-top: 200px;
+    height: 100vh;
+   }
+
+   .item
+   {
+    background-color: wheat;
+   }
+    .no1red{
+        background-color: red;
+        grid-column: span 2;
+    }
+    .no5white{
+        grid-column: span 2;
+        border-left: solid black 10px;
+    }
+    .no6white{
+        grid-column: span 2;
+    }
+    .no7white{
+        grid-row: span 2;
+    }
+    .no8white{
+        grid-column: span 2;
+        border-left: solid black 10px;
+    }
+    .no9blue{
+        background-color: blue;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .no10black{
+        background-color: black;
+        grid-column: span 2;
+    }
+    .no11yellow{
+        background-color: yellow;
+        grid-row: span 2;
+    }
+    .no12yellow{
+        background-color: yellow;
+        grid-row: span 2;
+        border-left: solid black 10px;
+    }
+    .no13white{
+        grid-row: span 2;
+    }
+    .no14red{
+        background-color: red;
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+/*for the next figure style*/
+    .wrapper {
+        width: 600px;
+        height: 600px;
+        display : grid;
+        margin-left: 839px;
+        margin-top: -11px;
+        grid-gap : 30px 20px ;
+        grid-template-rows : 170px 210px 61px 61px;
+        background-color : black ;
+       
+      }
+      div {
+          border: 1px solid black;
+          background-color: white;
+          
+      }
+      .a {
+       grid-row : 1/2 ;
+       grid-column : 1/2 ;
+      
+      }
+      .b {
+        grid-row :  2/3 ;
+       grid-column : 1/2;
+        
+          
+      
+      }
+      .c {
+        grid-row : 1/3 ;
+       grid-column : 2 /4 ;
+        background-color : red ;
+      
+      }
+      .d {
+       grid-row : 3/5;
+       grid-column : 1/2;
+        background-color : blue ; 
+      }
+      .e {
+        grid-row : 3/5 ;
+       grid-column :2/3;
+       background-color: white;
+      
+      }
+      .f {
+        grid-row : 3/4 ;
+       grid-column : 3/4 ;
+      }
+      .g {
+        grid-row : 4/ 5;
+       grid-column : 3 /4 ;
+          background-color : yellow ;
+      }

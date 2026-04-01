@@ -1,0 +1,159 @@
+
+.heading{
+    font-family: "Great Vibes", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-style: italic;
+    font-size: 35px;
+}
+.recipe{
+    background-color:rgb(183, 183, 183);
+    position: relative;
+    height: 410px;
+    max-width: 100%;
+}
+.image{
+    height: 400px;
+    max-width: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.textclass{
+    position: absolute;
+    height: inherit;
+    width: 800px;
+    left: 630px;
+}
+.parag{
+    font-size: 50px;
+    font-style: italic;
+    font-family:  "Pacifico", cursive;
+    font-weight:bold;
+}
+.parag2{
+    font-size: 20px;
+    font-family:  "Pacifico", cursive;
+}
+.ingrediants
+{
+    position: relative;
+    text-align: justify;
+    height: 500px;
+    width: 900px;
+    left: 40px;
+    top: 10px;
+}
+#ingred-title{
+    font-family: "Great Vibes", cursive;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 25px;
+}
+#list{
+    font-family: "Gruppo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+#ingred-title2{
+    font-family:  "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    font-style: italic;
+}
+ul li {
+    margin-bottom: 10px;
+}
+.nutration{
+    position: relative;
+    background-color:rgb(205, 194, 165) ;
+    height: 50px;
+    width: 920px;
+    left: 50px;
+}
+#nu-parg1{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-family:  "Pacifico", cursive;
+    font-weight: 550;
+}
+#Amount-per-serving{
+    position: relative;
+    height: 40px;
+    width: 600px;
+    padding-left: 320px;
+    left: 50px;
+    text-align:center;
+    background-color: rgb(225, 215, 198);
+    font-family:  Montserrat, Verdana, sans-serif;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+}
+.nutration-enarg{
+    position: relative;
+    background-color: rgb(234, 228, 221);
+    height: 40px;
+    width: 920px;
+    left: 50px;
+}
+.Enargy{
+    height: 40px;
+    width: 300px;
+    font-family:  Montserrat, Verdana, sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    padding-left: 10px ;
+}
+.Enargy-quantity{
+    position: relative;
+    height: 40px;
+    width: 250px;
+    left: 500px;
+    top: -40px;
+    font-family:  Montserrat, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.dailyenergy{
+    position: relative;
+    height: 40px;
+    width: 170px;
+    left: 750px;
+    top: -80px;
+    font-family:  Montserrat, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.percentage{
+    position: relative;
+    width: 170px;
+    height: 50px;
+    top: -34px;
+    left: 430px;
+    font-family:  Montserrat, Verdana, sans-serif;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 550;
+}
+.final{
+    position: relative;
+    height: 80px;
+    width: 1500;
+    background-color:rgb(250, 237, 206);
+    top: 20px;
+    font-family: "Playwrite AU QLD", cursive;
+    font-size: 30px;
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 30px;
+}
+.final2{
+    position: relative;
+    height: 60px;
+}

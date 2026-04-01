@@ -1,0 +1,60 @@
+* {
+    box-sizing:border-box;
+    background-color: floralwhite;
+  }
+  
+  body {
+    margin-top: 160px;
+    width: 100%;
+    background-color: floralwhite;
+  }
+  
+  table {
+    margin: 0 auto;
+    empty-cells: show;
+    border: 0px solid magenta;
+    width: 404px;
+    height: 404px;
+    border-collapse: collapse;
+  }
+  
+  tr {
+    border: 4px solid black;
+  }
+  
+  td {
+    border: 4px solid black;
+  }
+  
+  .remove-border-left {
+    border-left-color: transparent;
+  }
+  
+  .remove-border-right {
+    border-right-color: transparent;
+  }
+  
+  .remove-border-bottom {
+    border-bottom-color: transparent;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .sm {
+    height: 40px;
+  }
+  
