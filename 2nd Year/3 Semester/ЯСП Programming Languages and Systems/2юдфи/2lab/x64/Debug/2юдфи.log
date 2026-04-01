@@ -1,0 +1,8 @@
+﻿  Scanning sources for module dependencies...
+  mycode.cpp
+  Compiling...
+  mycode.cpp
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2юдфи\source.h(61,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'mycode.cpp')
+  
+  2юдфи.vcxproj -> C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2юдфи\x64\Debug\2lab.exe

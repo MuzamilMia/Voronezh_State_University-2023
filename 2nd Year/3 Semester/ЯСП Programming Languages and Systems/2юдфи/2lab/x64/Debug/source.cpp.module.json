@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "2lab\\x64\\Debug\\source.obj",
+            "outputs": [
+                "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem ЯСП Programming Languages and Systems\\2юдфи\\2lab\\x64\\Debug\\vc143.pdb",
+                "2lab\\x64\\Debug\\"
+            ],
+            "requires": []
+        }
+    ]
+}

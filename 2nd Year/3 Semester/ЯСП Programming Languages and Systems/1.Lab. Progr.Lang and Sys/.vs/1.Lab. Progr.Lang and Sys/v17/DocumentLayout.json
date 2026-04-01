@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\write.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|solutionrelative:write.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\read.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0FE07CAB-5260-4249-8D0B-223695E2153F}|1.Lab. Progr.Lang and Sys.vcxproj|solutionrelative:read.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "read.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\read.txt",
+              "RelativeDocumentMoniker": "read.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\read.txt",
+              "RelativeToolTip": "read.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-24T13:42:43.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "write.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\write.txt",
+              "RelativeDocumentMoniker": "write.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\write.txt",
+              "RelativeToolTip": "write.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-24T13:42:27.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\3. Sem \u042F\u0421\u041F Programming Languages and Systems\\1.Lab. Progr.Lang and Sys\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAF8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-14T15:37:09.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
