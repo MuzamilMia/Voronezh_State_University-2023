@@ -1,0 +1,10 @@
+﻿  mycode.cpp
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(41,69): warning C4552: '+': result of expression not used
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(115,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(33,1): warning C4715: 'find_level': not all control paths return a value
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(44,1): warning C4715: 'find_sum_level': not all control paths return a value
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(295,1): warning C4715: 'max_number': not all control paths return a value
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(355,1): warning C4715: 'make_tree': not all control paths return a value
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(469,1): warning C4715: 'sum_of_descendents': not all control paths return a value
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\mycode.cpp(459,1): warning C4715: 'copy_withoutleaves': not all control paths return a value
+  3rd Sem exam practice.vcxproj -> C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\3rd Sem exam practice\x64\Debug\3rd Sem exam practice.exe
