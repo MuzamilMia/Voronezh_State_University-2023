@@ -1,0 +1,5 @@
+﻿  MyTask.cpp
+  Trie_tree.cpp
+  Generating Code...
+C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\Trie Tree Lab\MyTask.cpp(44,1): warning C4715: 'count_words_with_vowels': not all control paths return a value
+  Trie Tree Lab.vcxproj -> C:\Users\Muzamil Mia\Desktop\Third Sem. Structure and algo\Trie Tree Lab\x64\Debug\Trie Tree Lab.exe
