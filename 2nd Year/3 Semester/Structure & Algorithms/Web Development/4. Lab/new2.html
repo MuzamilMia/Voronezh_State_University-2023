@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Dark and light theme support */
+    body.dark-theme {
+      background-color: #333;
+      color: #fff;
+    }
+
+    body.dark-theme .task {
+      background-color: #444;
+      color: #fff;
+    }
+
+    /* Layout structure */
+    .task-tracker {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .status-column {
+      padding: 10px;
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+      background-color: #e9e9e9;
+      border-radius: 8px;
+    }
+
+    /* Header for each status column */
+    .status-column h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .task {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+    }
+
+    .task__user {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .avatar img {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .empty-message {
+      display: none;
+      color: #888;
+    }
+
+    .status-column:empty .empty-message {
+      display: block;
+    }
+
+    /* Task type colors */
+    .task_type-story {
+      background-color: #e6ffe6;
+    }
+
+    .task_type-task {
+      background-color: #e6f7ff;
+    }
+
+    .task_type-bug {
+      background-color: #ffe6e6;
+    }
+
+    /* Task priority labels */
+    .task_priority-high::before {
+      content: 'High Priority';
+      color: red;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .task_priority-low::before {
+      content: 'Low Priority';
+      color: green;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    /* Mobile View (Backlog) */
+    @media (max-width: 600px) {
+      .task-tracker {
+        flex-direction: column;
+      }
+
+      .status-column {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* Tablet View (Tabs) */
+    @media (min-width: 600px) and (max-width: 1000px) {
+      .status-column {
+        flex: 1 1 100%;
+      }
+    }
+
+    /* Desktop View (Kanban) */
+    @media (min-width: 1000px) {
+      .task-tracker {
+        flex-direction: row;
+      }
+
+      .status-column {
+        flex: 1;
+        overflow-y: auto;
+        max-height: 80vh;
+      }
+    }
+
+    /* Theme toggle and sorting options */
+    .controls {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .controls label {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Controls for theme and sorting -->
+  <div class="controls">
+    <label>
+      <input type="checkbox" id="theme-toggle">
+      Тёмная тема
+    </label>
+    <div>
+      <label>
+        <input type="radio" name="sort" value="priority">
+        По приоритету
+      </label>
+      <label>
+        <input type="radio" name="sort" value="type">
+        По типу
+      </label>
+    </div>
+  </div>
+
+  <!-- Task Tracker Layout -->
+  <div class="task-tracker">
+    <!-- Status Column for "Selected" -->
+    <div class="status-column" data-status="selected">
+      <h2>Selected</h2>
+      <figure class="task task_type-story task_priority-high">
+        <div class="number">task::2345</div>
+        <div class="task__title">Реализация лабы 4</div>
+        <div class="task__user">
+          <div class="avatar"><img src="avatar1.jpg" alt="Avatar"></div>
+          <div class="name">Жмышенко Аркадий</div>
+        </div>
+        <button class="details-button">Подробнее</button>
+      </figure>
+      <p class="empty-message">Нет задач в этом статусе</p>
+    </div>
+
+    <!-- Status Column for "In Progress" -->
+    <div class="status-column" data-status="in-progress">
+      <h2>In Progress</h2>
+      <!-- Task example -->
+      <figure class="task task_type-task task_priority-low">
+        <div class="number">task::1234</div>
+        <div class="task__title">Подготовка отчета</div>
+        <div class="task__user">
+          <div class="avatar"><img src="avatar2.jpg" alt="Avatar"></div>
+          <div class="name">Иванов Иван</div>
+        </div>
+        <button class="details-button">Подробнее</button>
+      </figure>
+    </div>
+
+    <!-- Status Column for "Testing" -->
+    <div class="status-column" data-status="testing">
+      <h2>Testing</h2>
+      <p class="empty-message">Нет задач в этом статусе</p>
+    </div>
+
+    <!-- Status Column for "Done" -->
+    <div class="status-column" data-status="done">
+      <h2>Done</h2>
+      <!-- Task example -->
+      <figure class="task task_type-bug task_priority-high">
+        <div class="number">task::5678</div>
+        <div class="task__title">Исправление ошибки</div>
+        <div class="task__user">
+          <div class="avatar"><img src="avatar3.jpg" alt="Avatar"></div>
+          <div class="name">Сидоров Петр</div>
+        </div>
+        <button class="details-button">Подробнее</button>
+      </figure>
+    </div>
+  </div>
+
+  <script>
+    // Theme toggle functionality
+    document.getElementById('theme-toggle').addEventListener('change', function () {
+      document.body.classList.toggle('dark-theme');
+    });
+  </script>
+</body>
+</html>

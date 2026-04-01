@@ -1,0 +1,327 @@
+/* 
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #111;
+	perspective: 1000px;
+}
+.scene
+{
+	position:relative;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+}
+.cube
+{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d
+}
+.face
+{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+	perspective: 500px;
+	border:0.1px solid#fff;
+}
+.front
+{
+	transform: rotateY(0deg) translateZ(150px);
+}
+.back
+{
+	transform: rotateY(180deg) translateZ(150px);
+}
+.left
+{
+	transform: rotateY(-90deg) translateZ(150px);
+}
+.right
+{
+	transform: rotateY(90deg) translateZ(150px);
+}
+.top
+{
+	transform: rotateX(90deg) translateZ(150px);
+}
+.bottom
+{
+	transform: rotateX(-90deg) translateZ(150px);
+}
+.grid
+{
+	display: grid;
+	grid-template-columns: repeat(10,1fr);
+}
+.grid span
+{
+	width:30px;
+	height: 30px;
+	background:#333d;
+	border: 0.1px solid #fff1;
+	transform-style: preserve-3d;
+	perspective: 500px;
+}
+
+.grid span.active
+{
+	background: #fff;
+	z-index: 10000;
+	filter: drop-shadow(0 0 20px #fff);
+} */
+/* ----------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  perspective: 1000px;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.scene {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.cube {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.face {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  border: 0.1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, background 0.3s ease;
+}
+
+.front {
+  transform: rotateY(0deg) translateZ(150px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(150px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(150px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+
+/* Shadow Effects for Cube */
+.cube {
+  box-shadow: 0 10px 30px rgba(38, 146, 6, 0.7);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.grid span {
+  width: 30px;
+  height: 30px;
+  background: #333d;
+  border: 0.1px solid #fff1;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.grid span.active {
+  background: #aaa709;
+  z-index: 10000;
+  filter: drop-shadow(0 0 20px #ffffff);
+  transform: scale(1.5);
+}
+
+/* Hover effect to animate faces */
+
+.cube:hover .face {
+  transform: rotateY(15deg) rotateX(15deg);
+}
+
+/* Rotate Cube with Mouse Movements */ 
+
+body {
+  cursor: grab;
+}
+
+.cube:active {
+  cursor: grabbing;
+}
+
+/*  dynamic glowing background */
+@keyframes glowingBackground {
+  0% { background: #9b8d3e; }
+  50% { background: #726703; }
+  100% { background: #3d5008; }
+}
+
+.scene {
+  animation: glowingBackground 3s infinite alternate;
+}
+  
+ /* * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #111;
+	perspective: 1000px;
+	overflow: hidden; /* Prevent scrolling 
+	cursor: grab;
+	animation: backgroundAnimation 10s infinite ease-in-out; /* Add background animation 
+  }
+  
+  .scene {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease;
+  }
+  
+  .cube {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth 
+  }
+  
+  .face {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	transform-style: preserve-3d;
+	perspective: 500px;
+	border: 0.1px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.5s ease, background 0.3s ease;
+  }
+  
+  .front {
+	transform: rotateY(0deg) translateZ(150px);
+  }
+  .back {
+	transform: rotateY(180deg) translateZ(150px);
+  }
+  .left {
+	transform: rotateY(-90deg) translateZ(150px);
+  }
+  .right {
+	transform: rotateY(90deg) translateZ(150px);
+  }
+  .top {
+	transform: rotateX(90deg) translateZ(150px);
+  }
+  .bottom {
+	transform: rotateX(-90deg) translateZ(150px);
+  }
+  
+  /* Grid styling 
+  .grid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	width: 100%;
+	height: 100%;
+  }
+  
+  .grid span {
+	width: 30px;
+	height: 30px;
+	background: rgba(22, 123, 141, 0.867);
+	border: 0.1px solid rgba(156, 146, 139, 0.067);
+	transform-style: preserve-3d;
+	perspective: 500px;
+	transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .grid span.active {
+	background: #fff;
+	z-index: 10000;
+	filter: drop-shadow(0 0 20px #fff);
+	transform: scale(1.5);
+  }
+  
+  /* Hover effect to animate faces 
+  .cube:hover .face {
+	transform: rotateY(15deg) rotateX(15deg);
+  }
+  
+  /* Add dynamic glowing background animation 
+  @keyframes backgroundAnimation {
+	0% {
+	  background: linear-gradient(45deg, #75c020, #c0cc12, #ddcf09);
+	  background-size: 400% 400%;
+	}
+	50% {
+	  background: linear-gradient(45deg, #757c0f, #feb47b, #ff7e5f);
+	  background-size: 400% 400%;
+	}
+	100% {
+	  background: linear-gradient(45deg, #d3b50d, #d6b315, #880f64);
+	  background-size: 400% 400%;
+	}
+  }
+  
+  /* Rotate Cube with Mouse Movements 
+  body:active {
+	cursor: grabbing;
+  }
+  
+  --------------------------------------------------------------
+ */
+
+ 
