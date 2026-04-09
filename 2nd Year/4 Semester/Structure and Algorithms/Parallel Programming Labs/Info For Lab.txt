@@ -1,0 +1,5 @@
+//Variant Number is:  17
+
+This is the section for the Parallel Programming that has used the variant Number- 17. 
+
+They are all 7 labs and the variants has used and taken from the PDF file which is also exicted here. I am attaching that file as well.

@@ -1,0 +1,32 @@
+﻿  source.cpp
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Parallel Programming Labs\Project1\source.cpp(71,28): warning C4244: 'argument': conversion from 'ULONGLONG' to 'unsigned int', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\type_traits(1706,67): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+  (compiling source file 'source.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\type_traits(1706,67):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Muzamil Mia\Desktop\Стр Алг\Parallel Programming Labs\Project1\source.cpp(131,40):
+          see reference to function template instantiation 'std::thread::thread<void(__cdecl &)(int,int (*)[5]),size_t,int(*&)[5],0>(_Fn,size_t &&,int (*&)[5])' being compiled
+          with
+          [
+              _Fn=void (__cdecl &)(int,int (*)[5])
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(93,9):
+          see reference to function template instantiation 'void std::thread::_Start<void(__cdecl &)(int,int (*)[5]),_Ty,int(*&)[5]>(_Fn,_Ty &&,int (*&)[5])' being compiled
+          with
+          [
+              _Ty=size_t,
+              _Fn=void (__cdecl &)(int,int (*)[5])
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(76,40):
+          see reference to function template instantiation 'unsigned int (__cdecl *std::thread::_Get_invoke<std::thread::_Start::_Tuple,0,1,2>(std::integer_sequence<size_t,0,1,2>) noexcept)(void *)' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(67,17):
+          see reference to function template instantiation 'unsigned int std::thread::_Invoke<std::thread::_Start::_Tuple,0,1,2>(void *) noexcept' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\thread(60,14):
+          see reference to function template instantiation 'void std::invoke<void(__cdecl *)(int,int (*)[5]),unsigned __int64,int(*)[5]>(_Callable &&,_Ty1 &&,int (*&&)[5]) noexcept(false)' being compiled
+          with
+          [
+              _Callable=void (__cdecl *)(int,int (*)[5]),
+              _Ty1=unsigned __int64
+          ]
+  
+  Project1.vcxproj -> C:\Users\Muzamil Mia\Desktop\Стр Алг\Parallel Programming Labs\Project1\x64\Debug\Project1.exe

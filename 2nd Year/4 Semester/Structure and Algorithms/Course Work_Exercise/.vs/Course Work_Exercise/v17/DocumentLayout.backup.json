@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{496198E3-2C63-4D5C-9649-85E0BA9F03E1}|Course Work_Exercise.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{496198E3-2C63-4D5C-9649-85E0BA9F03E1}|Course Work_Exercise.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{496198E3-2C63-4D5C-9649-85E0BA9F03E1}|Course Work_Exercise.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{496198E3-2C63-4D5C-9649-85E0BA9F03E1}|Course Work_Exercise.vcxproj|solutionrelative:file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\file.txt",
+              "RelativeDocumentMoniker": "file.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\file.txt",
+              "RelativeToolTip": "file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-03T21:10:44.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Course Work_Exercise\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-03T21:09:08.161Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

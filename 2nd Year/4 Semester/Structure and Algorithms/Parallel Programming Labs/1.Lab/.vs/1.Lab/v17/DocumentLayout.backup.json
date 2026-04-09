@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Parallel Programming Labs\\1.Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7402B456-09DC-4742-9FE3-3E0595AA5389}|1.Lab.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Parallel Programming Labs\\1.Lab\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7402B456-09DC-4742-9FE3-3E0595AA5389}|1.Lab.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Parallel Programming Labs\\1.Lab\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\Parallel Programming Labs\\1.Lab\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAuwHAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T12:44:05.734Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+[main]
+   |
+   v
+[Инициализация матрицы] ----> [init_matrix_fixed]
+   |                           (5x5, 25 элементов, сумма = 62)
+   v
+[Вывод матрицы] ----> [print]
+   |
+   v
+[sum_parallel]
+   |
+   v
+[Инициализация: chunk = 10, global_sum = 0]
+   |
+   v
+[Заполнение очереди: TSQ.push({0-10}, {10-20}, {20-25})]
+   |
+   v
+[Создание 3 рабочих потоков]
+   |-------------------|-------------------|-------------------|
+   v                   v                   v                   v
+[Thread 0]         [Thread 1]         [Thread 2]         [Main Thread]
+   |                   |                   |                   |
+   v                   v                   v                   v
+[process_elements] [process_elements] [process_elements] [process_elements]
+   |                   |                   |                   |
+   v                   v                   v                   v
+[Попытка TSQ.try_pop(pair)] [Попытка TSQ.try_pop(pair)] [Попытка TSQ.try_pop(pair)] [Попытка TSQ.try_pop(pair)]
+   |                   |                   |                   |
+   v                   v                   v                   v
+[Если pair получен] [Если pair получен] [Если pair получен] [Если pair получен]
+[Например, 0-10]   [Например, 10-20]  [Например, 20-25]  [Если очередь пуста]
+   |                   |                   |                   |
+   v                   v                   v                   v
+[Обработка]        [Обработка]         [Обработка]         [Ожидание]
+[Цикл по i=left до right] [Цикл по i=left до right] [Цикл по i=left до right]
+[row=i/5,col=i%5]  [row=i/5,col=i%5]  [row=i/5,col=i%5]
+[Если repeat_number] [Если repeat_number] [Если repeat_number]
+[local_sum += digit] [local_sum += digit] [local_sum += digit]
+   |                   |                   |
+   v                   v                   v
+[mutex_task.lock()] [mutex_task.lock()] [mutex_task.lock()]
+[global_sum += local_sum] [global_sum += local_sum] [global_sum += local_sum]
+[mutex_task.unlock()] [mutex_task.unlock()] [mutex_task.unlock()]
+   |                   |                   |
+   v                   v                   v
+[Повтор try_pop]   [Повтор try_pop]   [Повтор try_pop]
+   |                   |                   |
+   v                   v                   v
+[Очередь пуста]    [Очередь пуста]    [Очередь пуста]
+   |                   |                   |
+   v                   v                   v
+[Конец process_elements] [Конец process_elements] [Конец process_elements]
+   |                   |                   |
+   v                   v                   v
+[Завершение]       [Завершение]       [Завершение]
+   |                   |                   |
+   |-------------------|-------------------|
+   |                                       |
+   v                                       v
+[join Threads]                         [Конец process_elements]
+   |                                       |
+   v                                       v
+[Ожидание потоков]                     [Возврат global_sum]
+   |                                       |
+   v                                       v
+[Вывод результатов] <------------------- [Конец]
+   |
+   v
+[Программа завершена]

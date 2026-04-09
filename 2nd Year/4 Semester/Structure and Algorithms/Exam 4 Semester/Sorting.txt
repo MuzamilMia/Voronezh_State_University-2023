@@ -1,0 +1,134 @@
+--------- KUM 1 --------------
+//5. Внешние сортировки. Реализовать простое многопутевое двухфазное слияние.
+
+// Task 5
+void print(const int* arr, int size)
+{
+    for (int i = 0; i < size; ++i)
+        std::cout << arr[i] << " ";
+    std::cout << "\n";
+}
+void external_Sort(int* data, int N, int size_chunk)
+{
+    int Run_numbers = (N + size_chunk - 1) / size_chunk;
+
+    std::vector<std::vector<int>> runs(Run_numbers);
+    std::vector<int> runSizes(Run_numbers);
+
+    for (int i = 0; i < Run_numbers; ++i)
+    {
+        int start = i * size_chunk;
+        int end = (std::min)(start + size_chunk, N);
+        int size = end - start;
+
+        runs[i].resize(size);
+        for (int j = 0; j < size; ++j)
+            runs[i][j] = data[start + j];
+
+        std::sort(runs[i].begin(), runs[i].end());
+        runSizes[i] = size;
+    }
+
+    // ФАЗА 2: Многопутевое слияние 
+    std::vector<int> cur_index(Run_numbers, 0);
+
+    for (int k = 0; k < N; ++k) {
+        int minValue = INT_MAX;
+        int minRun = -1;
+
+        for (int i = 0; i < Run_numbers; ++i) {
+            if (cur_index[i] < runSizes[i]) {
+                int val = runs[i][cur_index[i]];
+                if (val < minValue) {
+                    minValue = val;
+                    minRun = i;
+                }
+            }
+        }
+        data[k] = minValue;
+        cur_index[minRun]++;
+    }
+}
+//Main Function. 
+int data[] = { 42, 17, 8, 99, 3, 56, 12, 7, 28, 4, 65, 13, 18, 23, 2, 55, 44, 11, 31, 1 };
+int N = sizeof(data) / sizeof(data[0]);
+int CHUNK_SIZE = 5;
+std::cout << "Initial array:\n";
+print(data, N);
+external_Sort(data, N, CHUNK_SIZE);
+std::cout << "\nSorted array:\n";
+print(data, N);
+
+
+---------------------------------------------------------------------------------
+5. Внешние сортировки. Реализовать естественное многопутевое однофазное 
+сбалансированное слияние.
+//------------------ KUM 2 -------------------
+const int size_run = 20;
+const int max_size_run = 20;
+void Print(const int* arr, int size)
+{
+    for (int i = 0; i < size; ++i)
+        std::cout << arr[i] << " ";
+    std::cout << "\n";
+}
+
+void MergeSort(int* data, int N)
+{
+    int runs[size_run][max_size_run];
+    int runSizes[size_run];
+
+    // ФАЗА 1: Находим естественные runs
+    int run_count = 0;
+    int cur_run_size = 0;
+    runs[run_count][cur_run_size++] = data[0];
+
+    for (int i = 1; i < N; ++i)
+    {
+        if (data[i] >= data[i - 1])
+            runs[run_count][cur_run_size++] = data[i];
+        else
+        {
+            runSizes[run_count] = cur_run_size;
+            run_count++;
+            cur_run_size = 0;
+            runs[run_count][cur_run_size++] = data[i];
+        }
+    }
+    runSizes[run_count] = cur_run_size;
+    run_count++;
+
+    // ФАЗА 2: Однофазное многопутевое слияние runs
+    int index[size_run] = { 0 }; // текущие позиции в каждом run
+
+    for (int k = 0; k < N; ++k) {
+        int minValue = INT_MAX;
+        int minRun = -1;
+
+        for (int i = 0; i < run_count; ++i)
+        {
+            if (index[i] < runSizes[i]) {
+                int val = runs[i][index[i]];
+                if (val < minValue) {
+                    minValue = val;
+                    minRun = i;
+                }
+            }
+        }
+
+        data[k] = minValue;
+        index[minRun]++;
+    }
+}
+// Main Function. 
+//task 5. 
+int data[] = { 1, 4, 5, 2, 6, 8, 3, 7, 9, 0, 11, 12, 10, 15, 14, 16, 18, 17, 19, 13 };
+int N = sizeof(data) / sizeof(data[0]);
+
+std::cout << "Initial array:\n";
+Print(data, N);
+
+MergeSort(data, N);
+
+std::cout << "\nSorted array:\n";
+Print(data, N);

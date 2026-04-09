@@ -1,0 +1,61 @@
+
+std::atomic_int: Тип в C++ (из заголовка <atomic>), представляющий
+целое число (int), которое поддерживает атомарные операции.
+
+[main]
+   |
+   v
+[Инициализация матрицы] ----> [init_matrix_fixed]
+   |                           (5x5, 25 элементов, сумма = 53)
+   v
+[Вывод матрицы] ----> [print]
+   |
+   v
+[sum_parallel]
+   |
+   v
+[Инициализация: block = 25 / 4 = 6, global_sum = 0]
+   |
+   v
+[Создание 3 рабочих потоков]
+   |-------------------|-------------------|-------------------|
+   v                   v                   v                   v
+[Thread 0]         [Thread 1]         [Thread 2]         [Main Thread]
+(Индексы 0-5)     (Индексы 6-11)    (Индексы 12-17)    (Индексы 18-24)
+   |                   |                   |
+   v                   v                   v
+[sum: 0-5]         [sum: 6-11]        [sum: 12-17]
+   |                   |                   |
+   v                   v                   v
+[Обработка]        [Обработка]         [Обработка]
+[Цикл по i]        [Цикл по i]        [Цикл по i]
+[row=i/5,col=i%5]  [row=i/5,col=i%5]  [row=i/5,col=i%5]
+[Если repeat_number] [Если repeat_number] [Если repeat_number]
+[local_res += digit] [local_res += digit] [local_res += digit]
+   |                   |                   |
+   v                   v                   v
+[global_sum += local_res] [global_sum += local_res] [global_sum += local_res]
+   |                   |                   |
+   v                   v                   v
+[Конец sum]        [Конец sum]        [Конец sum]
+   |                   |                   |
+   v                   v                   v
+[Завершение]       [Завершение]       [Завершение]
+   |                   |                   |
+   |-------------------|-------------------|
+   |                                       |
+   v                                       v
+[join Threads]                         [sum: 18-24]
+   |                                       |
+   v                                       v
+[Обработка]                            [Цикл по i]
+[Ожидание потоков]                     [row=i/5,col=i%5]
+   |                                   [Если repeat_number]
+   v                                   [local_res += digit]
+[Возврат global_sum]                   [global_sum += local_res]
+   |                                       |
+   v                                       v
+[Вывод результатов] <------------------- [Конец sum]
+   |
+   v
+[Программа завершена]

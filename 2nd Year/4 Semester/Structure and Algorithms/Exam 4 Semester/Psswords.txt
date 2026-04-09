@@ -1,0 +1,69 @@
+// Mia Muzamil Ahmad
+// \\fs.amm.vsu.ru\public
+// Moodle 
+//      06235563
+//      WRmDoL74Y7
+//
+
+
+
+#include<iostream>
+#include<fstream>
+#include"HashTable_2.h"
+#include<functional>
+#include<map>
+#include<thread>
+#include<future>
+#include<atomic>
+#include<Windows.h>
+#include <intrin.h>
+// task 1
+// task 2 
+// task 3 
+// task 4
+
+int main()
+{
+    //----------------- KUM 2-----------------------
+
+    //------------ Task 1 ----------
+   /* char targ_letter = 'r';
+    auto lambda = [targ_letter](const std::string& word) -> bool {
+        bool found = false;
+        if (!word.empty() && word.back() == targ_letter)
+            found = true;
+        return found; };
+    std::vector<std::string> result = task1("Text_1.txt", lambda);
+    for (const auto& word : result)
+        std::cout << word << '\n';*/
+    // ----------- Task 2 ----------
+    /*HashTable_2 table;
+    table.print();
+    ELEM elem;
+    bool result1 = table.search(table, "9203021033", elem);
+    if (result1)
+        std::cout << "The Key has been founded: " << elem.key << '\n';
+    else
+        std::cout << "Not founded \n";*/
+    // ----------- Task 3 ----------
+    /*std::ifstream file("Matrix_3_2.txt");
+    for (int i{}; i < n; ++i)
+        for (int j{}; j < n; ++j)
+            file >> matrix[i][j];
+    task3(0, 0);
+    if (max_cost != -1)
+    {
+        std::cout << "Max cost: " << max_cost << '\n';
+        std::cout << "cnt: " << cnt_res << '\n';
+    }*/
+    // ----------- Task 4 ----------
+    /*srand(GetTickCount());
+    std::ifstream file1("Numbers_4.txt");
+    int arr[COUNT];
+    for (size_t i = 0; i < COUNT; ++i)
+        file1 >> arr[i];
+    std::cout << "parallel = " << min_parallel(arr) << '\n';*/
+
+    std::cin.ignore();
+    return 0;
+}

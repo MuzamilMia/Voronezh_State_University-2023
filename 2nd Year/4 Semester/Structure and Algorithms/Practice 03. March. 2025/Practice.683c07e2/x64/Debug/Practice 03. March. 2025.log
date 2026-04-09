@@ -1,0 +1,38 @@
+﻿  source.cpp
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(102,2): error C2653: 'set': is not a class or namespace name
+      C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(102,2):
+      the template instantiation context (the oldest one first) is
+          C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(100,7):
+          while compiling class template 'My_set'
+  
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(102,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(102,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(102,14): error C2238: unexpected token(s) preceding ';'
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(111,13): error C4596: '+': illegal qualified name in member declaration
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(111,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(108,4): error C3861: 's': identifier not found
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(108,4): error C2065: 's': undeclared identifier
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(114,20): error C3861: 's': identifier not found
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(114,20): error C2065: 's': undeclared identifier
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(119,10): error C3861: 's': identifier not found
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(119,10): error C2065: 's': undeclared identifier
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(123,14): error C3861: 's': identifier not found
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(123,14): error C2065: 's': undeclared identifier
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(111,13): error C2556: 'int My_set<char>::operator +(My_set<char> &)': overloaded function differs only by return type from 'My_set<char> My_set<char>::operator +(My_set<char> &)'
+      C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(110,9):
+      see declaration of 'My_set<char>::operator +'
+  
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(111,13): error C2371: 'My_set<char>::operator +': redefinition; different basic types
+      C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(110,9):
+      see declaration of 'My_set<char>::operator +'
+  
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(113,13): error C2460: 'My_set<char>::tmp': uses 'My_set<char>', which is being defined
+      C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(100,7):
+      see declaration of 'My_set<char>'
+  
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(114,3): error C2059: syntax error: 'for'
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(114,18): error C2334: unexpected token(s) preceding ':'; skipping apparent function body
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(127,1): error C2143: syntax error: missing ')' before ';'
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(127,1): error C2143: syntax error: missing ';' before ')'
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(145,8): error C2264: 'My_set<char>::operator +': error in function definition or declaration; function not called
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Practice 03. March. 2025\source.cpp(145,8): error C2088: built-in operator '+' cannot be applied to an operand of type 'My_set<char>'

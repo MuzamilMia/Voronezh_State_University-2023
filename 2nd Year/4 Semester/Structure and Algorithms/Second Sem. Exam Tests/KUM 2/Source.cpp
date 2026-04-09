@@ -1,0 +1,234 @@
+#include<iostream>
+#include<fstream>
+#include"HashTable_2.h"
+#include<functional>
+#include<map>
+#include<thread>
+#include<future>
+#include<atomic>
+#include<Windows.h>
+#include <vector>
+#include <algorithm>
+#include <limits>
+// task 1
+std::vector<std::string> task1(std::string filename, std::function<bool(const std::string&)> predicate)
+{
+    std::map<std::string, int> wordCount;
+    std::ifstream file(filename);
+    std::string word;
+    if(file)
+    { 
+        while (file >> word)
+            wordCount[word]++;
+        file.close();
+
+        std::vector<std::string> result;
+        for (const auto& pair : wordCount)
+        {
+            if (pair.second == 1 && predicate(pair.first))
+                result.push_back(pair.first);
+        }
+        return result.empty() ? std::vector<std::string>{"No words "} : result;
+    }
+}
+// task 2 
+bool HashTable_2:: search( HashTable_2& table, const std::string& key, ELEM& result)
+{
+    int i = table.hash(key);
+    int originalIndex = i;
+    bool first_ind = true;
+    bool found = false; 
+
+    while (table.data[i].used && (first_ind || i != originalIndex) && !found)
+    {
+        if (table.data[i].elem.key == key)
+        {
+            result = table.data[i].elem;
+            found = true;
+        }
+        else
+        {
+            i = (i + 1) % table.size;
+            first_ind = false;
+        }
+    }
+
+    return found;  
+}
+// task 3 
+const int n = 10;
+int matrix[n][n];
+int max_cost = -1;
+int cnt_res = 1;
+int sum = 0;
+void task3(int i, int j)
+{
+    if (i == n - 1 && j == n - 1)
+    {
+        if (sum > max_cost)
+        {
+            max_cost = sum + matrix[n - 1][n - 1];
+            cnt_res = 1;
+        }
+        else
+            if ((sum + matrix[n - 1][n - 1]) == max_cost)
+                cnt_res++;
+    }
+    else
+    {
+        if (j + 1 < n)
+        {
+            sum += matrix[i][j + 1];
+            task3(i, j + 1);
+            sum -= matrix[i][j + 1];
+        }
+        if (i + 1 < n)
+        {
+            sum += matrix[i + 1][j];
+            task3(i + 1, j);
+            sum -= matrix[i + 1][j];
+        }
+    }
+}
+// task 4
+const size_t COUNT = 555;
+const size_t NTHREADS = 4;
+void Min(int* arr, size_t left, size_t right, std::atomic_int& result)
+{
+    for (size_t i = left; i < right; ++i)
+    {
+        if (abs(arr[i]) % 2 == 0)
+        {
+            int curr = result.load();
+            if (abs(curr) % 2 || arr[i] <= curr)
+            {
+                result.compare_exchange_weak(curr, arr[i]);
+            }
+
+        }
+
+    }
+}
+int min_parallel(int* arr)
+{
+    std::future<void> t[NTHREADS - 1];
+    size_t block = COUNT / NTHREADS;
+    std::atomic_int global_min{ arr[0] };
+    for (size_t i = 0; i < NTHREADS - 1; ++i)
+    {
+        t[i] = std::async(std::launch::async, Min, arr, block * i, block * (i + 1), std::ref(global_min));
+    }
+
+    Min(arr, block * (NTHREADS - 1), COUNT, std::ref(global_min));
+    for (size_t i = 0; i < NTHREADS - 1; ++i)
+    {
+        t[i].get();
+    }
+    return global_min;
+}
+
+
+// Task 5
+void print(const int* arr, int size)
+{
+    for (int i = 0; i < size; ++i)
+        std::cout << arr[i] << " ";
+    std::cout << "\n";
+}
+void external_Sort(int* data, int N, int size_chunk)
+{
+    int Run_numbers = (N + size_chunk - 1) / size_chunk;
+
+    std::vector<std::vector<int>> runs(Run_numbers);
+    std::vector<int> runSizes(Run_numbers);
+
+    for (int i = 0; i < Run_numbers; ++i)
+    {
+        int start = i * size_chunk;
+        int end = (std::min)(start + size_chunk, N);
+        int size = end - start;
+
+        runs[i].resize(size);
+        for (int j = 0; j < size; ++j)
+            runs[i][j] = data[start + j];
+
+        std::sort(runs[i].begin(), runs[i].end());
+        runSizes[i] = size;
+    }
+
+    // ФАЗА 2: Многопутевое слияние 
+    std::vector<int> cur_index(Run_numbers, 0);
+
+    for (int k = 0; k < N; ++k) {
+        int minValue = INT_MAX;
+        int minRun = -1;
+
+        for (int i = 0; i < Run_numbers; ++i) {
+            if (cur_index[i] < runSizes[i]) {
+                int val = runs[i][cur_index[i]];
+                if (val < minValue) {
+                    minValue = val;
+                    minRun = i;
+                }
+            }
+        }
+        data[k] = minValue;
+        cur_index[minRun]++;
+    }
+}
+
+
+int main()
+{
+	//----------------- KUM 2 -----------------------
+	
+	//------------ Task 1 ----------
+    char targ_letter = 'r';
+    auto lambda = [targ_letter](const std::string& word) -> bool {
+            bool found = false;
+            if (!word.empty() && word.back() == targ_letter)
+                found = true;
+            return found; };
+    std::vector<std::string> result = task1("Text_1.txt", lambda);
+    for (const auto& word : result)
+        std::cout << word << '\n';
+	// ----------- Task 2 ----------
+	HashTable_2 table;
+	table.print();
+	ELEM elem;
+    bool result1 = table.search(table, "9203021033", elem);
+	if (result1)
+		std::cout << "The Key has been founded: "<< elem.key<<'\n';
+	else
+		std::cout << "Not founded \n";
+    // ----------- Task 3 ----------
+    std::ifstream file("Matrix_3_2.txt");
+    for (int i{}; i < n; ++i)
+        for (int j{}; j < n; ++j)
+            file >> matrix[i][j];
+    task3(0, 0);
+    if (max_cost != -1)
+    {
+        std::cout << "Max cost: " << max_cost << '\n';
+        std::cout << "cnt: " << cnt_res << '\n';
+    }
+    // ----------- Task 4 ----------
+    srand(GetTickCount());
+    std::ifstream file1("Numbers_4.txt");
+    int arr[COUNT];
+    for (size_t i = 0; i < COUNT; ++i)
+        file1 >> arr[i];
+    std::cout << "parallel = " << min_parallel(arr) << '\n';
+    //task 5. 
+    int data[] = { 42, 17, 8, 99, 3, 56, 12, 7, 28, 4, 65, 13, 18, 23, 2, 55, 44, 11, 31, 1 };
+    int N = sizeof(data) / sizeof(data[0]);
+    int CHUNK_SIZE = 5;
+    std::cout << "Initial array:\n";
+    print(data, N);
+    external_Sort(data, N, CHUNK_SIZE);
+    std::cout << "\nSorted array:\n";
+    print(data, N);
+
+	std::cin.ignore();
+	return 0;
+}

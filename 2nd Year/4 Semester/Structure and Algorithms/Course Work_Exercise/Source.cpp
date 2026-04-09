@@ -1,0 +1,309 @@
+#include<iostream>
+#include<fstream>
+#include<ostream>
+#include<stack>
+#include<queue>
+using Tinfo = int;
+struct NODE
+{
+	Tinfo info;
+	int count = 1;
+	NODE* left, * right;
+	NODE(Tinfo info = 0, NODE* ptr_left = nullptr, NODE* ptr_right = nullptr) 
+		:info(info), left(ptr_left), right(ptr_right) {};
+	~NODE()
+	{
+		left = right = nullptr;
+	}
+};
+
+using Tree = NODE*;
+//For simple Tree.
+/*Tree Build_Balance(int count, std::ifstream& file)
+{
+	Tree result{};
+	if (count)
+	{
+		int count_left = count / 2;
+		int count_right = count - count_left - 1;
+
+		result = new NODE();
+		file >> result->info;
+		result->left = Build_Balance(count_left, file);
+		result->right = Build_Balance(count_right, file);
+	}
+	return result;
+}
+void Clear(Tree& root)
+{
+	if (root)
+	{
+		Clear(root->left);
+		Clear(root->right);
+		delete root;
+		root = nullptr;
+	}
+}
+void Print(Tree root, int level)
+{
+	if (root)
+	{
+		Print(root->right, level + 1);
+		for (int i = 1; i < level; ++i)
+			std::cout << "   ";
+		std::cout << root->info << '\n';
+		Print(root->left, level + 1);
+	}
+}*/
+
+//-------------------------- Insertion BST ------------------------------
+void insert(Tree& t, Tinfo elem)
+{
+	if (!t)
+		t = new NODE(elem);
+	else
+		if (elem < t->info)
+			insert(t->left, elem);
+		else
+			if (elem > t->info)
+				insert(t->right, elem);
+			else
+				++t->count;
+}
+Tree Build_Search(std::ifstream& file)
+{
+	Tinfo elem;
+	Tree root{};
+	while (file >> elem)
+		insert(root, elem);
+	return root;
+}
+void Print_order(Tree t, int space = 0) {
+	const int COUNT = 3; 
+	if (t) {
+
+		space += COUNT;
+		Print_order(t->right, space);
+
+		std::cout << '\n';
+		for (int i = COUNT; i < space; i++) {
+			std::cout << " ";
+		}
+		std::cout << t->info;
+		if (t->count > 1) {
+			std::cout << "(" << t->count << ")";
+		}
+
+		Print_order(t->left, space);
+	}
+}
+//-------------------------- Search BST ---------------------------------
+Tree Search(const Tree& root, Tinfo elem)
+{
+	Tree t = root;
+	Tree result = nullptr; 
+
+	while (t != nullptr && result == nullptr)
+	{
+		if (elem < t->info) {
+			t = t->left;
+		}
+		else if (elem > t->info) {
+			t = t->right;
+		}
+		else {
+			result = t; 
+		}
+	}
+
+	return result; 
+}
+//-------------------------- Deletion BST -------------------------------
+void Find_elem(Tree& r, Tree& q)
+{
+	if (r->right)
+		Find_elem(r->right, q);
+	else
+	{
+		q->info = r->info;
+		q->count = r->count;
+		q = r;
+		r = r->left;
+	}
+}
+bool Delete(Tree& t, Tinfo elem)
+{
+	bool result = false;
+	if (t) {
+		if (elem < t->info) {
+			result = Delete(t->left, elem);
+		}
+		else if (elem > t->info) {
+			result = Delete(t->right, elem);
+		}
+		else {
+			result = true;
+			if (t->count > 1) {
+				--t->count;
+			}
+			else {
+				Tree q = t;
+				if (!q->right) {
+					t = q->left;
+				}
+				else if (!q->left) {
+					t = q->right;
+				}
+				else {
+					Find_elem(q->left, q);
+				}
+				delete q;
+			}
+		}
+	}
+	return result;
+}
+//-----------------------------------------------------------------------
+// ----------------------- Count Even Numbers Using the stack -----------
+int count_even_Stack(Tree t){
+	std::stack<Tree> s;
+	int result{};
+	Tree root = t;
+	while (t){
+		result += (t->info % 2 == 0 ? 1 : 0);
+		if (t->left)
+		{
+			if (t->right)
+				s.push(t->right);
+			t = t->left;
+		}
+		else
+			if (t->right)
+				t = t->right;
+			else
+				if (s.empty())
+					t = nullptr;
+				else
+				{
+					t = s.top();
+					s.pop();
+				}
+	}
+	return result;
+}
+// ----------------------- Count Even Numbers Using the Queue -----------
+int count_even_Queue(Tree root)
+{
+	int result{};
+	std::queue<Tree> q;
+	Tree t{};
+	q.push(root);
+	while (!q.empty())
+	{
+		t = q.front(); q.pop();
+		result += (t->info % 2 == 0 ? 1 : 0);
+		if (t->left)
+			q.push(t->left);
+		if (t->right)
+			q.push(t->right);
+	}
+	return result;
+}
+
+int main()
+{
+	std::ifstream file("file.txt");
+	int cnt{};
+	file >> cnt;
+	if (file)
+	{
+		//Tree root = Build_Balance(cnt, file);
+		//Print(root, 1);
+		//--------------- Insertion --------------
+		std::cout << "\nBinary Search Tree is \n";
+		Tree root = Build_Search(file);
+		Print_order(root);
+		//--------------- Search    --------------
+		std::cout << "\nBinary Search Tree's Search \n";
+		Tree found = Search(root, 30);
+		if (found)
+			std::cout << "Found: " << found->info << std::endl;
+		else 
+			std::cout << "Not found" << std::endl;
+		//--------------- Deletion  --------------
+		bool result= Delete(root, 70);
+		if (result)
+		{
+			std::cout << "The elemnt is deleted \n";
+			Print_order(root);
+		}
+		else
+			std::cout << "The elemt is not founded \n";
+
+		//--------------- Finding even numbers, using stack and queue -----
+		/*//--------------- Finding Even numbers using stack ------
+		std::cout << "\nThe quantity of all even numbers is: " 
+			<< count_even_Stack(root) << "\n";
+		//--------------- Finding Even numbers using Queue ------
+		std::cout << "The quantity of all even numbers is: " 
+			<< count_even_Queue(root) << "\n";*/
+	}
+	else
+		std::cout << "The file is not existed \n";
+	std::cin.ignore();
+}
+
+
+//Реализация бинарного дерева поиска в цепочном представлении
+/*using Tinfo = int;
+struct NODE
+{
+	Tinfo info;
+	int count = 1;
+	NODE* left, * right;
+	NODE(Tinfo info = 0, NODE* ptr_left = nullptr, NODE* ptr_right = nullptr)
+		:info(info), left(ptr_left), right(ptr_right) {
+	};
+	~NODE()
+	{
+		left = right = nullptr;
+	}
+};*/
+
+//Реализация бинарного дерева поиска в сплошном представлении
+/*
+#define MAX_SIZE 100
+struct Tree {
+	int nodes[MAX_SIZE];
+	int size;
+};
+using MyTree = Tree*;
+
+void initTree(MyTree tree)
+{
+	tree->size = 0;
+}
+
+void insert(MyTree tree, int key) {
+	if (tree->size <= MAX_SIZE)
+	{
+		tree->nodes[tree->size] = key;
+		int i = tree->size;
+		while (i > 0)
+		{
+			int parent = (i - 1) / 2;
+			if (tree->nodes[parent] > tree->nodes[i])
+			{
+				int temp = tree->nodes[parent];
+				tree->nodes[parent] = tree->nodes[i];
+				tree->nodes[i] = temp;
+				i = parent;
+			}
+		}
+		tree->size++;
+	}
+}
+
+
+*/
+

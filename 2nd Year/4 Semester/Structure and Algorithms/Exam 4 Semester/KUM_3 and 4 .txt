@@ -1,0 +1,77 @@
+//KUM 3
+
+//
+
+
+
+
+//Task Hashtables
+bool search(std::string key, ELEM& result)
+{
+	int i = hash(key);
+	int originalIndex = i;
+	bool first_ind = true;
+	bool found = false;
+
+	while (data[i].used != 0 && (first_ind || i != originalIndex) && !found)
+	{
+		if (data[i].used == 1 && data[i].elem.key == key)
+		{
+			result = data[i].elem;
+			found = true;
+		}
+		else
+		{
+			i = (i + 1) % size;
+			first_ind = false;
+		}
+	}
+	return found;
+}*/
+//Main Function is:
+ /* for KUM3
+ ELEM elem;
+ bool found=table.search("2333829882", elem);
+ if (found)
+     std::cout << "Founded \n";
+ else
+     std::cout << "Not founded \n";*/
+---------------------------------------------------------------------------------
+
+
+
+
+
+---------------------------------------------------------------------------------
+KUM 4
+
+
+//HashTables (HashTables_3)
+ bool remove(std::string key)
+    {
+        int index = hash(key);
+        bool removed = false;
+
+        for (auto it = data[index].begin(); it != data[index].end() && !removed; ++it)
+        {
+            if (it->key == key)
+            {
+                data[index].erase(it);
+                removed = true;
+            }
+        }
+
+        return removed;
+    }
+//Main Function is
+// HashTable_3 table;
+// std::cout << "Before Deletion:\n";
+// table.print();
+// bool removed = table.remove("8905185708"; );
+// if (removed)
+//     std::cout << "Successfully removed.\n";
+// else
+//     std::cout << "Not found\n";
+// std::cout << "After deletion:\n";
+// table.print();	
+-----------------------------------------------------------------------------------

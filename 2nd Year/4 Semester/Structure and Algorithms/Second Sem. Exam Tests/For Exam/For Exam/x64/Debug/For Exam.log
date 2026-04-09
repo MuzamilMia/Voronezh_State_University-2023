@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Second Sem. Exam Tests\For Exam\Source.cpp(144,30): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Second Sem. Exam Tests\For Exam\Source.cpp(223,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Muzamil Mia\Desktop\Стр Алг\Second Sem. Exam Tests\For Exam\Source.cpp(45,1): warning C4715: 'task1': not all control paths return a value
+  For Exam.vcxproj -> C:\Users\Muzamil Mia\Desktop\Стр Алг\Second Sem. Exam Tests\For Exam\x64\Debug\For Exam.exe

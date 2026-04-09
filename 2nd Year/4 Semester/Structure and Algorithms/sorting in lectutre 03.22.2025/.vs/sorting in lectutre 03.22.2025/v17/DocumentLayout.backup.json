@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|solutionrelative:source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|solutionrelative:f2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{772C16A8-8FA0-44D5-AC22-5C12C7E911EC}|sorting in lectutre 03.22.2025.vcxproj|solutionrelative:f1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "source.cpp",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\source.cpp",
+              "RelativeDocumentMoniker": "source.cpp",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\source.cpp*",
+              "RelativeToolTip": "source.cpp*",
+              "ViewState": "AgIAADIAAADAFzMzMzMZwDcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-22T07:58:56.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "f2.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f2.txt",
+              "RelativeDocumentMoniker": "f2.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f2.txt",
+              "RelativeToolTip": "f2.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-22T07:58:48.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "f1.txt",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f1.txt",
+              "RelativeDocumentMoniker": "f1.txt",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\\u0421\u0442\u0440 \u0410\u043B\u0433\\sorting in lectutre 03.22.2025\\f1.txt",
+              "RelativeToolTip": "f1.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-22T07:58:33.729Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
