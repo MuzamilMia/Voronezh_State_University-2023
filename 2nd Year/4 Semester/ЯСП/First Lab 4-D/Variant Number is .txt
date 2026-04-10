@@ -1,0 +1,3 @@
+The Vairant number is: 4-D. 
+
+This lab is based on the (containers, Iterators and Algorithms) (Контейнеры, итераторы, алгоритмы). 
