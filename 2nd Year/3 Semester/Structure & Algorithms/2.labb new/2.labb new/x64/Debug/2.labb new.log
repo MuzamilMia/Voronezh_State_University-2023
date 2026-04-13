@@ -1,0 +1,38 @@
+﻿  mycode.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\numbers(11): warning STL4038: The contents of <numbers> are available only with C++20 or later.
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\compare(12): warning STL4038: The contents of <compare> are available only with C++20 or later.
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(58,49): error C7589: defaulting comparison operators requires at least '/std:c++20'
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(65,10): error C2039: 'strong_ordering': is not a member of 'std'
+  (compiling source file 'mycode.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream(19,1):
+      see declaration of 'std'
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(65,26): error C2143: syntax error: missing ';' before '<='
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(65,10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(65,36): error C2059: syntax error: '>'
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(65,64): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(36,31): error C3083: 'numbers': the symbol to the left of a '::' must be a type
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(36,31): error C2039: 'pi': is not a member of 'std'
+  (compiling source file 'mycode.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\sstream(19,1):
+      see declaration of 'std'
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(36,31): error C2065: 'pi': undeclared identifier
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\source.h(61,26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  (compiling source file 'mycode.cpp')
+  
+C:\Users\Muzamil Mia\Desktop\3. Sem ЯСП Programming Languages and Systems\2.labb new\mycode.cpp(94,24): error C2676: binary '<': 'Angle' does not define this operator or a conversion to a type acceptable to the predefined operator
