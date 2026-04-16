@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {}
+    "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj": {
+    "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj",
+        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj",
         "projectName": "BookStore.BL",
-        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj",
+        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj",
         "packagesPath": "C:\\Users\\Muzamil Mia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\obj\\",
+        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -36,8 +36,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj"
+              "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj"
               }
             }
           }
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
+    "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj",
         "projectName": "BookStore.DataAccess",
-        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Muzamil Mia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
+    "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
         "projectName": "BookStore.Service",
-        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
+        "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\BookStore.Service.csproj",
         "packagesPath": "C:\\Users\\Muzamil Mia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\obj\\",
+        "outputPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -190,11 +190,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj": {
-                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj"
+              "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj": {
+                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\BookStore.BL.csproj"
               },
-              "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj"
+              "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\BookStore.DataAccess.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dgddIFebt9k=",
+  "dgSpecHash": "EBf8bPpBngU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj",
+  "projectFilePath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Muzamil Mia\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\Muzamil Mia\\.nuget\\packages\\microsoft.aspnetcore.mvc.testing\\8.0.0\\microsoft.aspnetcore.mvc.testing.8.0.0.nupkg.sha512",

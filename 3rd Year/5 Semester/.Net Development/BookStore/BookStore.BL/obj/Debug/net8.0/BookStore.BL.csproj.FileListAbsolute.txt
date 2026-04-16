@@ -29,3 +29,19 @@ C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\
 C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\refint\BookStore.BL.dll
 C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.pdb
 C:\Users\Muzamil Mia\Desktop\github\VSU-5th-Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\ref\BookStore.BL.dll
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\bin\Debug\net8.0\BookStore.BL.deps.json
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\bin\Debug\net8.0\BookStore.BL.dll
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\bin\Debug\net8.0\BookStore.BL.pdb
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\bin\Debug\net8.0\BookStore.DataAccess.dll
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\bin\Debug\net8.0\BookStore.DataAccess.pdb
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.csproj.AssemblyReference.cache
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.AssemblyInfoInputs.cache
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.AssemblyInfo.cs
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.csproj.CoreCompileInputs.cache
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.sourcelink.json
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStor.EB2E6063.Up2Date
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.dll
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\refint\BookStore.BL.dll
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\BookStore.BL.pdb
+C:\Users\Muzamil Mia\Desktop\github\Voronezh_State_University-2023\3rd Year\5 Semester\.Net Development\BookStore\BookStore.BL\obj\Debug\net8.0\ref\BookStore.BL.dll

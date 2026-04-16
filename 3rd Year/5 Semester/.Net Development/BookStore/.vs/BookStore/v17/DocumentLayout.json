@@ -1,110 +1,130 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\",
+  "WorkspaceRootPath": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.integrationtests\\bookscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|solutionrelative:bookstore.integrationtests\\bookscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.integrationtests\\booksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|solutionrelative:bookstore.integrationtests\\booksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\booktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\booktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\books\\ibooksmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\ibooksmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\books\\booksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\booksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\auth\\entities\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\entities\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\auth\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\auth\\iauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\iauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.bl\\auth\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\books\\booksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\booksprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\books\\entities\\booktypebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\entities\\booktypebl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\books\\entities\\bookbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\entities\\bookbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\recipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\recipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\booktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\booktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\auth\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\authprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC2C851-EBA0-4541-9050-D05289A8DFED}|BookStore.UnitTests\\BookStore.UnitTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.unittests\\booksprovidertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\auth\\iauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\iauthprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\books\\ibooksmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\books\\ibooksmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\auth\\entities\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\entities\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.bl\\auth\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDDF951E-E183-4BCB-8AE2-E04945CE9C05}|BookStore.BL\\BookStore.BL.csproj|solutionrelative:bookstore.bl\\auth\\entities\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\migrations\\20251219115907_addseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\migrations\\20251219115907_addseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\migrations\\20251211223118_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\migrations\\20251211223118_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC2C851-EBA0-4541-9050-D05289A8DFED}|BookStore.UnitTests\\BookStore.UnitTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.unittests\\booksprovidertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BC2C851-EBA0-4541-9050-D05289A8DFED}|BookStore.UnitTests\\BookStore.UnitTests.csproj|solutionrelative:bookstore.unittests\\booksprovidertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.integrationtests\\bookscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|solutionrelative:bookstore.integrationtests\\bookscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.integrationtests\\booksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCE2EB3D-4036-4ED5-94D1-2445635E7D23}|BookStore.IntegrationTests\\BookStore.IntegrationTests.csproj|solutionrelative:bookstore.integrationtests\\booksapitests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\books\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|c:\\users\\muzamil mia\\desktop\\github\\voronezh_state_university-2023\\3rd year\\5 semester\\.net development\\bookstore\\bookstore.service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1200AAD3-436A-495C-89BC-90574B42B242}|BookStore.Service\\BookStore.Service.csproj|solutionrelative:bookstore.service\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|c:\\users\\muzamil mia\\desktop\\github\\vsu-5th-semester\\.net development\\bookstore\\bookstore.dataaccess\\entities\\recipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E38324C2-F3BB-45A0-9341-6A3BE55687B3}|BookStore.DataAccess\\BookStore.DataAccess.csproj|solutionrelative:bookstore.dataaccess\\entities\\recipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -130,108 +150,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Delete.cshtml",
-              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Delete.cshtml",
-              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Delete.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-20T08:48:33.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IBooksManager.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\IBooksManager.cs",
-              "RelativeDocumentMoniker": "BookStore.BL\\Books\\IBooksManager.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\IBooksManager.cs",
-              "RelativeToolTip": "BookStore.BL\\Books\\IBooksManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "BookStore.Service\\Controllers\\BooksController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAawEEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T11:28:25.303Z"
+              "WhenOpened": "2025-12-19T11:31:20.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Book.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\Book.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Book.cs",
               "RelativeToolTip": "BookStore.DataAccess\\Entities\\Book.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAIMzMzMzMqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T07:59:17.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BookType.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\BookType.cs",
-              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\BookType.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\BookType.cs",
-              "RelativeToolTip": "BookStore.DataAccess\\Entities\\BookType.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:59:18.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BooksApiTests.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksApiTests.cs",
-              "RelativeDocumentMoniker": "BookStore.IntegrationTests\\BooksApiTests.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksApiTests.cs",
-              "RelativeToolTip": "BookStore.IntegrationTests\\BooksApiTests.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T14:01:49.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BooksControllerTests.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksControllerTests.cs",
-              "RelativeDocumentMoniker": "BookStore.IntegrationTests\\BooksControllerTests.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksControllerTests.cs",
-              "RelativeToolTip": "BookStore.IntegrationTests\\BooksControllerTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T13:54:29.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Details.cshtml",
-              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Details.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Details.cshtml",
-              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-20T08:48:36.525Z"
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BookStore.Service\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:48:52.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Edit.cshtml",
-              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Edit.cshtml",
-              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-20T08:48:37.45Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Index.cshtml",
               "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Index.cshtml",
               "RelativeToolTip": "BookStore.Service\\Views\\Books\\Index.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -239,107 +198,132 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "BookStore.Service\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T12:48:52.39Z"
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Delete.cshtml",
+              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T08:48:33.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T08:48:36.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BookStore.Service\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T14:08:06.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BooksProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\BooksProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\BooksProvider.cs",
               "RelativeDocumentMoniker": "BookStore.BL\\Books\\BooksProvider.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\BooksProvider.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\BooksProvider.cs",
               "RelativeToolTip": "BookStore.BL\\Books\\BooksProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-19T11:29:10.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "BookStore.Service\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "BookTypeBL.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\Entities\\BookTypeBL.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Books\\Entities\\BookTypeBL.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\Entities\\BookTypeBL.cs",
+              "RelativeToolTip": "BookStore.BL\\Books\\Entities\\BookTypeBL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T11:31:20.213Z"
+              "WhenOpened": "2026-04-14T15:51:06.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "BookBL.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\Entities\\BookBL.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Books\\Entities\\BookBL.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\Entities\\BookBL.cs",
+              "RelativeToolTip": "BookStore.BL\\Books\\Entities\\BookBL.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:50:59.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Create.cshtml",
               "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Create.cshtml",
               "RelativeToolTip": "BookStore.Service\\Views\\Books\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-19T11:38:48.905Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Recipt.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Recipt.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\Recipt.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Recipt.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Entities\\Recipt.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:59:20.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookType.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\BookType.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\BookType.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\BookType.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Entities\\BookType.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T07:59:18.985Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "BookStore.Service\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-20T07:51:02.197Z"
+              "Title": "AuthProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\AuthProvider.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\AuthProvider.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\AuthProvider.cs",
+              "RelativeToolTip": "BookStore.BL\\Auth\\AuthProvider.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:42:43.442Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "BookStore.Service\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "BookStore.Service\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T07:46:07.194Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "LoginResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
-              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
-              "RelativeToolTip": "BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T12:41:57.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
-              "RelativeToolTip": "BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T12:41:37.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "IAuthProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\IAuthProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\IAuthProvider.cs",
               "RelativeDocumentMoniker": "BookStore.BL\\Auth\\IAuthProvider.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\IAuthProvider.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\IAuthProvider.cs",
               "RelativeToolTip": "BookStore.BL\\Auth\\IAuthProvider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -348,46 +332,118 @@
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BookStore.Service\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BookStore.Service\\Controllers\\HomeController.cs",
+              "Title": "IBooksManager.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\IBooksManager.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Books\\IBooksManager.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Books\\IBooksManager.cs",
+              "RelativeToolTip": "BookStore.BL\\Books\\IBooksManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T11:28:25.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
+              "RelativeToolTip": "BookStore.BL\\Auth\\Entities\\LoginResponse.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:41:57.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
+              "RelativeToolTip": "BookStore.BL\\Auth\\Entities\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T12:41:37.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "BookStore.Service\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "BookStore.Service\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T14:08:06.942Z"
+              "WhenOpened": "2025-12-20T07:46:07.194Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "AuthProvider.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\AuthProvider.cs",
-              "RelativeDocumentMoniker": "BookStore.BL\\Auth\\AuthProvider.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.BL\\Auth\\AuthProvider.cs",
-              "RelativeToolTip": "BookStore.BL\\Auth\\AuthProvider.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBsAAAA8AAAAAAAAAA==",
+              "Title": "20251219115907_AddSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Migrations\\20251219115907_AddSeedData.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Migrations\\20251219115907_AddSeedData.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Migrations\\20251219115907_AddSeedData.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Migrations\\20251219115907_AddSeedData.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T12:42:43.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BookStore.Service\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAACAAAAAAAAhwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-19T12:50:28.653Z"
+              "WhenOpened": "2026-04-14T15:49:38.282Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "20251211223118_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Migrations\\20251211223118_InitialCreate.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Migrations\\20251211223118_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Migrations\\20251211223118_InitialCreate.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Migrations\\20251211223118_InitialCreate.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:49:34.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BooksApiTests.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksApiTests.cs",
+              "RelativeDocumentMoniker": "BookStore.IntegrationTests\\BooksApiTests.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksApiTests.cs",
+              "RelativeToolTip": "BookStore.IntegrationTests\\BooksApiTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T14:01:49.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\User.cs",
+              "RelativeToolTip": "BookStore.DataAccess\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T10:14:38.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BooksControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksControllerTests.cs",
+              "RelativeDocumentMoniker": "BookStore.IntegrationTests\\BooksControllerTests.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.IntegrationTests\\BooksControllerTests.cs",
+              "RelativeToolTip": "BookStore.IntegrationTests\\BooksControllerTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T13:54:29.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "BooksProviderTests.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.UnitTests\\BooksProviderTests.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.UnitTests\\BooksProviderTests.cs",
               "RelativeDocumentMoniker": "BookStore.UnitTests\\BooksProviderTests.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.UnitTests\\BooksProviderTests.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.UnitTests\\BooksProviderTests.cs",
               "RelativeToolTip": "BookStore.UnitTests\\BooksProviderTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -395,11 +451,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Books\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Books\\Edit.cshtml",
+              "RelativeToolTip": "BookStore.Service\\Views\\Books\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T08:48:37.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "BookStore.Service\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-20T07:51:02.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BookStore.Service\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BookStore.Service\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAACAAAAAAAAhwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-19T12:50:28.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Program.cs",
               "RelativeDocumentMoniker": "BookStore.Service\\Program.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\Program.cs",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\Program.cs",
               "RelativeToolTip": "BookStore.Service\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -407,11 +499,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.Development.json",
               "RelativeDocumentMoniker": "BookStore.Service\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.Development.json",
               "RelativeToolTip": "BookStore.Service\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -419,27 +511,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.json",
               "RelativeDocumentMoniker": "BookStore.Service\\appsettings.json",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.json",
+              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\Voronezh_State_University-2023\\3rd Year\\5 Semester\\.Net Development\\BookStore\\BookStore.Service\\appsettings.json",
               "RelativeToolTip": "BookStore.Service\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-12-13T08:00:39.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Recipt.cs",
-              "DocumentMoniker": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Recipt.cs",
-              "RelativeDocumentMoniker": "BookStore.DataAccess\\Entities\\Recipt.cs",
-              "ToolTip": "C:\\Users\\Muzamil Mia\\Desktop\\github\\VSU-5th-Semester\\.Net Development\\BookStore\\BookStore.DataAccess\\Entities\\Recipt.cs",
-              "RelativeToolTip": "BookStore.DataAccess\\Entities\\Recipt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:59:20.633Z"
             }
           ]
         }
