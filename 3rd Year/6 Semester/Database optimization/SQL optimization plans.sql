@@ -126,56 +126,58 @@ ORDER BY
 	T.LASTNAME;
 
 --==========================================================================
--- 41. Выбрать курс, который сдало наибольшее количество человек.
+		-- 26. Выбрать для каждого типа оборудования количество установленных единиц для пяти последних лет. В результирующей 
+		-- таблице должно быть шесть столбцов: название типа оборудования, 2019, 2018, 2017, 2016, 2015. Исключить из результирующей 
+		-- таблицы тип оборудования, который не устанавливался последние пять лет.
 EXPLAIN (
 	ANALYZE,
 	BUFFERS,
 	VERBOSE
 )
-SELECT
-	C.COURSEID,
-	C.NAME,
-	COUNT(DISTINCT SP.STUDENTID) AS PASS_STUDENT
-FROM
-	COURSE C
-	JOIN STUDENTPERFORMANCE SP ON C.COURSEID = SP.COURSEID
-WHERE
-	SP.MARKS >= 3
-GROUP BY
-	C.COURSEID,
-	C.NAME
-ORDER BY
-	PASS_STUDENT DESC;
+SELECT 
+    TE.Name AS Type_equipment,
+    SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2019 THEN 1 ELSE 0 END) AS "2019",
+    SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2018 THEN 1 ELSE 0 END) AS "2018",
+    SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2017 THEN 1 ELSE 0 END) AS "2017",
+    SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2016 THEN 1 ELSE 0 END) AS "2016",
+    SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2015 THEN 1 ELSE 0 END) AS "2015"
+FROM Type_equipment TE
+LEFT JOIN Equipment E ON E.typeID = TE.typeID
+    AND EXTRACT(YEAR FROM E.InstallationDate) BETWEEN 2015 AND 2019
+GROUP BY TE.Name
+HAVING(
+        SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2019 THEN 1 ELSE 0 END) +
+        SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2018 THEN 1 ELSE 0 END) +
+        SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2017 THEN 1 ELSE 0 END) +
+        SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2016 THEN 1 ELSE 0 END) +
+        SUM(CASE WHEN EXTRACT(YEAR FROM E.InstallationDate) = 2015 THEN 1 ELSE 0 END)) > 0 
+ORDER BY TE.Name;
 
----------------------------------------------------------------
+--================================
 EXPLAIN (
 	ANALYZE,
 	BUFFERS,
 	VERBOSE
 )
-WITH
-	COURSEPASSCOUNTS AS (
-		SELECT
-			C.COURSEID,
-			C.NAME,
-			COUNT(DISTINCT SP.STUDENTID) AS PASSEDSTUDENTS
-		FROM
-			COURSE C
-			JOIN STUDENTPERFORMANCE SP ON C.COURSEID = SP.COURSEID
-		WHERE
-			SP.MARKS >= 3
-		GROUP BY
-			C.COURSEID,
-			C.NAME
-	)
-SELECT
-	*
-FROM
-	COURSEPASSCOUNTS
-WHERE
-	PASSEDSTUDENTS = (
-		SELECT
-			MAX(PASSEDSTUDENTS)
-		FROM
-			COURSEPASSCOUNTS
-	);
+WITH yearly_counts AS (
+    SELECT 
+        TE.Name AS type_equipment,
+        EXTRACT(YEAR FROM E.InstallationDate) AS year,
+        COUNT(E.EquipmentID) AS equipment_count
+    FROM Type_equipment TE
+    LEFT JOIN Equipment E ON E.typeID = TE.typeID
+    WHERE EXTRACT(YEAR FROM E.InstallationDate) BETWEEN 2015 AND 2019
+        OR E.EquipmentID IS NULL
+    GROUP BY TE.Name, EXTRACT(YEAR FROM E.InstallationDate)
+)
+SELECT 
+    type_equipment,
+    COALESCE(SUM(CASE WHEN year = 2019 THEN equipment_count END), 0) AS "2019",
+    COALESCE(SUM(CASE WHEN year = 2018 THEN equipment_count END), 0) AS "2018",
+    COALESCE(SUM(CASE WHEN year = 2017 THEN equipment_count END), 0) AS "2017",
+    COALESCE(SUM(CASE WHEN year = 2016 THEN equipment_count END), 0) AS "2016",
+    COALESCE(SUM(CASE WHEN year = 2015 THEN equipment_count END), 0) AS "2015"
+FROM yearly_counts
+GROUP BY type_equipment
+HAVING SUM(equipment_count) > 0
+ORDER BY type_equipment;
