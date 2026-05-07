@@ -126,9 +126,9 @@ ORDER BY
 	T.LASTNAME;
 
 --==========================================================================
-		-- 26. Выбрать для каждого типа оборудования количество установленных единиц для пяти последних лет. В результирующей 
-		-- таблице должно быть шесть столбцов: название типа оборудования, 2019, 2018, 2017, 2016, 2015. Исключить из результирующей 
-		-- таблицы тип оборудования, который не устанавливался последние пять лет.
+-- 26. Выбрать для каждого типа оборудования количество установленных единиц для пяти последних лет. В результирующей 
+-- таблице должно быть шесть столбцов: название типа оборудования, 2019, 2018, 2017, 2016, 2015. Исключить из результирующей 
+-- таблицы тип оборудования, который не устанавливался последние пять лет.
 EXPLAIN (
 	ANALYZE,
 	BUFFERS,
@@ -159,33 +159,62 @@ EXPLAIN (
 	BUFFERS,
 	VERBOSE
 )
-WITH yearly_counts AS (
-    SELECT 
-        TE.Name AS type_equipment,
-        EXTRACT(YEAR FROM E.InstallationDate) AS year,
-        COUNT(E.EquipmentID) AS equipment_count
-    FROM Type_equipment TE
-    LEFT JOIN Equipment E ON E.typeID = TE.typeID
-    WHERE EXTRACT(YEAR FROM E.InstallationDate) BETWEEN 2015 AND 2019
-        OR E.EquipmentID IS NULL
-    GROUP BY TE.Name, EXTRACT(YEAR FROM E.InstallationDate)
-)
-SELECT 
-    type_equipment,
-    COALESCE(SUM(CASE WHEN year = 2019 THEN equipment_count END), 0) AS "2019",
-    COALESCE(SUM(CASE WHEN year = 2018 THEN equipment_count END), 0) AS "2018",
-    COALESCE(SUM(CASE WHEN year = 2017 THEN equipment_count END), 0) AS "2017",
-    COALESCE(SUM(CASE WHEN year = 2016 THEN equipment_count END), 0) AS "2016",
-    COALESCE(SUM(CASE WHEN year = 2015 THEN equipment_count END), 0) AS "2015"
-FROM yearly_counts
-GROUP BY type_equipment
-HAVING SUM(equipment_count) > 0
-ORDER BY type_equipment;
+WITH
+	YEARLY_COUNTS AS (
+		SELECT TE.NAME AS TYPE_EQUIPMENT, 
+		EXTRACT( YEAR FROM E.INSTALLATIONDATE ) AS YEAR,
+		COUNT(E.EQUIPMENTID) AS EQUIPMENT_COUNT
+		FROM TYPE_EQUIPMENT TE LEFT JOIN EQUIPMENT E ON E.TYPEID = TE.TYPEID
+		WHERE EXTRACT( YEAR FROM E.INSTALLATIONDATE ) BETWEEN 2015 AND 2019  OR E.EQUIPMENTID IS NULL
+		GROUP BY TE.NAME, EXTRACT( YEAR FROM E.INSTALLATIONDATE )
+	)
+SELECT
+	TYPE_EQUIPMENT,
+	COALESCE( SUM( CASE WHEN YEAR = 2019 THEN EQUIPMENT_COUNT END ), 0 ) AS "2019",
+	COALESCE( SUM( CASE WHEN YEAR = 2018 THEN EQUIPMENT_COUNT END ), 0 ) AS "2018",
+	COALESCE( SUM( CASE WHEN YEAR = 2017 THEN EQUIPMENT_COUNT END ), 0 ) AS "2017",
+	COALESCE( SUM( CASE WHEN YEAR = 2016 THEN EQUIPMENT_COUNT END ), 0 ) AS "2016",
+	COALESCE( SUM( CASE WHEN YEAR = 2015 THEN EQUIPMENT_COUNT END ), 0 ) AS "2015" 
+	FROM YEARLY_COUNTS 
+	GROUP BY TYPE_EQUIPMENT
+	HAVING SUM(EQUIPMENT_COUNT) > 0 
+	ORDER BY TYPE_EQUIPMENT;
 
 
 
 
----====================================================================================================z
+---====================================================================================================
+--CTE (оправданное и неоправданное использование)
+--47. Выбрать обучающихся, которые нарушили цепочку зависимостей курсов, т. е. сдали 
+			--	  успешно один курс, но не сдали предшествующий им курс.
+EXPLAIN (
+	ANALYZE,
+	BUFFERS,
+	VERBOSE
+)	
+SELECT DISTINCT
+    S.StudentID,
+    S.SecondName,
+    S.FirstName,
+    S.NikeName,
+    C.Name,
+    PC.Name
+FROM Student S
+    JOIN StudentPerformance SP ON S.StudentID = SP.StudentID
+    JOIN Course C ON SP.CourseID = C.CourseID
+    JOIN Course_Dependenc CD ON C.CourseID = CD.CourseID
+    JOIN Course PC ON CD.DependsOnCourseID = PC.CourseID
+WHERE 
+    (SP.Marks >= 3 OR SP.status_id IN (SELECT status_id FROM Status WHERE Name IN ('Completed')))
+    AND NOT EXISTS (
+        SELECT 1
+        FROM StudentPerformance SP2
+        WHERE SP2.StudentID = S.StudentID
+            AND SP2.CourseID = CD.DependsOnCourseID
+            AND (SP2.Marks >= 3 OR SP2.status_id IN (SELECT status_id FROM Status WHERE Name IN ('Completed')))
+    )
+ORDER BY S.secondname, S.FirstName;
+------------------------------------------------------------------------------------
 EXPLAIN (
 	ANALYZE,
 	BUFFERS,
@@ -199,7 +228,8 @@ WITH SuccessfulCourses AS (
         ST.Name AS status_name
     FROM StudentPerformance SP
         LEFT JOIN Status ST ON SP.status_id = ST.status_id
-    WHERE SP.Marks >= 3 OR ST.Name IN ('Completed', 'зачет'))
+    WHERE SP.Marks >= 3 OR ST.Name IN ('Completed')
+)
 SELECT 
     S.StudentID,
     S.Secondname,
@@ -219,3 +249,51 @@ WHERE NOT EXISTS (
         AND SC2.CourseID = CD.DependsOnCourseID
 )
 ORDER BY S.secondname, S.FirstName, C.Name;
+
+---====================================================================================================
+
+--======================== Window Fucntion========================
+EXPLAIN (
+	ANALYZE,
+	BUFFERS,
+	VERBOSE
+)
+SELECT 
+    T.teacherid,
+    T.lastname,
+    T.firstname,
+    T.middlename,
+    COUNT(DISTINCT CT.courseid) AS Amount_courses_teacher,
+    (SELECT COUNT(*) FROM Course) AS Whole_amount_courses_DataBase
+FROM Teacher T
+    LEFT JOIN Lesson L ON T.teacherid = L.teacherid
+    LEFT JOIN CourseTheme CT ON L.themeid = CT.themeid
+GROUP BY T.teacherid, T.lastname, T.firstname, T.middlename
+ORDER BY Amount_courses_teacher DESC, T.lastname;
+
+--===============================================================
+
+EXPLAIN (
+	ANALYZE,
+	BUFFERS,
+	VERBOSE
+)
+SELECT DISTINCT
+    teacherid,
+    lastname,
+    firstname,
+    middlename,
+    COUNT(courseid) OVER (PARTITION BY teacherid) AS Amount_courses_teacher,
+    (SELECT COUNT(*) FROM Course) AS Whole_amount_courses_DataBase
+FROM (
+    SELECT DISTINCT
+        T.teacherid,
+        T.lastname,
+        T.firstname,
+        T.middlename,
+        CT.courseid
+    FROM Teacher T
+    LEFT JOIN Lesson L ON T.teacherid = L.teacherid
+    LEFT JOIN CourseTheme CT ON L.themeid = CT.themeid
+)
+ORDER BY Amount_courses_teacher DESC, lastname;
