@@ -181,3 +181,41 @@ FROM yearly_counts
 GROUP BY type_equipment
 HAVING SUM(equipment_count) > 0
 ORDER BY type_equipment;
+
+
+
+
+---====================================================================================================z
+EXPLAIN (
+	ANALYZE,
+	BUFFERS,
+	VERBOSE
+)
+WITH SuccessfulCourses AS (
+    SELECT 
+        SP.StudentID,
+        SP.CourseID,
+        SP.Marks,
+        ST.Name AS status_name
+    FROM StudentPerformance SP
+        LEFT JOIN Status ST ON SP.status_id = ST.status_id
+    WHERE SP.Marks >= 3 OR ST.Name IN ('Completed', 'зачет'))
+SELECT 
+    S.StudentID,
+    S.Secondname,
+    S.FirstName,
+    S.NikeName,
+    C.Name,
+    PC.Name
+FROM SuccessfulCourses SC
+    JOIN Student S ON SC.StudentID = S.StudentID
+    JOIN Course C ON SC.CourseID = C.CourseID
+    JOIN Course_Dependenc CD ON C.CourseID = CD.CourseID
+    JOIN Course PC ON CD.DependsOnCourseID = PC.CourseID
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM SuccessfulCourses SC2
+    WHERE SC2.StudentID = SC.StudentID
+        AND SC2.CourseID = CD.DependsOnCourseID
+)
+ORDER BY S.secondname, S.FirstName, C.Name;
