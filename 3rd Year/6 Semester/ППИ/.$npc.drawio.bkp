@@ -1,0 +1,424 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.6 Chrome/144.0.7559.236 Electron/40.8.4 Safari/537.36" version="29.6.6">
+  <diagram name="Page-1" id="pHO-NvXJG9ZbVwxYO3LP">
+    <mxGraphModel dx="2222" dy="2728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Paj3os3-LZBra-E93u9Z-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFCE9F;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Информационная система библиотеки&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="230" width="440" x="510" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Данные о книгах&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="270" x="220" y="548" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Входы (Input)&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="130" x="40" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Данные об авторах&lt;/font&gt;" vertex="1">
+          <mxGeometry height="10" width="270" x="220" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-19" parent="1" style="text;whiteSpace=wrap;html=1;align=center;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;&lt;font style=&quot;font-size: 40px;&quot;&gt;библиотека&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Разработать информационную систему обслуживания библиотеки, которая содержит следующую информацию: названия книг, ФИО авторов, наименования издательств, год издания, количество страниц, количество иллюстраций, стоимость, название филиала библиотеки или книгохранилища, в которых находится книга, количество имеющихся в библиотеке экземпляров конкретной книги, количество студентов, которым выдавалась конкретная книга, названия факультетов, в учебном процессе которых используется указанная книга. Спроектировать информационную систему, которая поз-воляет:&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;1) для указанного филиала посчитать количество экземпляров указанной книги, находящихся в нем;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;2) для указанной книги посчитать количество факультетов, на которых она используется в данном филиале, и вывести названия этих факультетов;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;3) предоставить возможность добавления и изменения информации о книгах в библиотеке;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;4) предоставить возможность добавления и изменения информации о филиаах&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="430" width="1260" x="800" y="-750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-21" parent="1" style="text;whiteSpace=wrap;html=1;align=center;" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt; Управление (&lt;/b&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Control)&lt;/span&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;&lt;br&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;        (Правила библиотеки, учетные правила)&lt;/font&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="370" x="530" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.318;entryY=-0.026;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="650" y="455.98" />
+            </Array>
+            <mxPoint x="650.12" y="319.89000000000004" as="sourcePoint" />
+            <mxPoint x="649.9200000000001" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;entryX=-0.014;entryY=0.239;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="226.16" y="578.99" as="sourcePoint" />
+            <mxPoint x="509.99999999999994" y="578" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;entryX=-0.005;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="222.2" y="612.99" as="sourcePoint" />
+            <mxPoint x="509.99999999999994" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;entryX=-0.009;entryY=0.524;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="223.96" y="641.48" as="sourcePoint" />
+            <mxPoint x="509.99999999999994" y="639" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-26" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Данные о филиалах&lt;/font&gt;" vertex="1">
+          <mxGeometry height="25" width="150" x="280" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;entryX=-0.009;entryY=0.653;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="223.96" y="679.81" as="sourcePoint" />
+            <mxPoint x="509.99999999999994" y="678" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-28" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Данные о факультетах&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="160" x="275" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;entryX=-0.001;entryY=0.787;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="220.44" y="720.99" as="sourcePoint" />
+            <mxPoint x="509.99999999999994" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-30" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Данные о выдаче книг&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="275" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.477;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="320" as="sourcePoint" />
+            <mxPoint x="719.7600000000001" y="519.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-32" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.318;entryY=-0.026;entryDx=0;entryDy=0;entryPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="780.12" y="319.90999999999997" as="sourcePoint" />
+            <mxPoint x="780" y="519.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-34" parent="1" style="text;whiteSpace=wrap;html=1;rotation=90;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Правила библиотеки&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="560" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-37" parent="1" style="text;whiteSpace=wrap;html=1;rotation=90;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Нормативы учета&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="630" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-38" parent="1" style="text;whiteSpace=wrap;html=1;rotation=90;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Правила выдачи книг&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="680" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-39" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;(Механизмы)&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;Mechanism&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="240" x="600" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-40" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="629" y="950" as="sourcePoint" />
+            <mxPoint x="629" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-41" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="714.5" y="950" as="sourcePoint" />
+            <mxPoint x="714.5" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-42" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="800" y="950" as="sourcePoint" />
+            <mxPoint x="800" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-43" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Библиотекарь&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="110" x="551" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-45" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;База данных&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="110" x="640" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-46" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Компьютер&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="110" x="730" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-47" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;Output&lt;/b&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="90" x="1220" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-49" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="570.96" as="sourcePoint" />
+            <mxPoint x="1170" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-51" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="620.96" as="sourcePoint" />
+            <mxPoint x="1170" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-52" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="670.96" as="sourcePoint" />
+            <mxPoint x="1170" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-53" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;curved=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="950" y="720.96" as="sourcePoint" />
+            <mxPoint x="1170" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-54" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Количество экземпляров&lt;/font&gt;" vertex="1">
+          <mxGeometry height="17" width="170" x="970" y="543" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-55" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Список факультетов&lt;/font&gt;" vertex="1">
+          <mxGeometry height="17" width="150" x="980" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-58" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Отчеты&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="70" x="1020" y="644" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-62" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Обновленные данные&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="980" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-64" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;IDEF0 — Декомпозиция A0&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="400" x="1960" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-65" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;IDEF0 — Контекстная диаграмма (A-0)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="592.5" x="517.5" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-76" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-66" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#CDFFC0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Информационная система библиотеки&amp;nbsp;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="230" width="440" x="1940" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-67" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE9F6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Управление книгами&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="1390" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE9F6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Управление филиалами&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="1720" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE9F6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Учет экземпляров книг&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="2050" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE9F6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Анализ использования книг факультетами&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="2380" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE9F6;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Формирование отчетов&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="2710" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-75" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-66" style="endArrow=classic;html=1;rounded=0;entryX=0.465;entryY=-0.082;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.091;exitY=1.001;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="Paj3os3-LZBra-E93u9Z-67" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1986" y="540" />
+              <mxPoint x="1986" y="620" />
+              <mxPoint x="1520" y="620" />
+            </Array>
+            <mxPoint x="1990" y="620" as="sourcePoint" />
+            <mxPoint x="2040" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-77" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.394;entryY=-0.069;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-78" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.446;entryY=-0.082;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-79" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.875;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2325" y="590" />
+              <mxPoint x="2840" y="590" />
+            </Array>
+            <mxPoint x="2370" y="560" as="sourcePoint" />
+            <mxPoint x="2840" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-80" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;h1 data-section-id=&quot;z40s95&quot; data-start=&quot;2292&quot; data-end=&quot;2346&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;IDEF3 — Процесс (например: Учет экземпляров книг)&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;p data-start=&quot;2348&quot; data-end=&quot;2392&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="60" width="800" x="3840" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-81" parent="1" style="text;whiteSpace=wrap;" value="[Начало]&#xa;    |&#xa;    v&#xa;[Получить данные о книге]&#xa;    |&#xa;    v&#xa;[Определить филиал]&#xa;    |&#xa;    v&#xa;[Ввести количество экземпляров]&#xa;    |&#xa;    v&#xa;[Сохранить в БД]&#xa;    |&#xa;    v&#xa;[Конец]" vertex="1">
+          <mxGeometry height="220" width="200" x="3830" y="-65" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-86" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-82" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE599;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Получить данные о книге&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="3660" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-87" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-83" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE599;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Определить филиал &lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="4000" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-88" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-84" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE599;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Ввести количество экземпляров&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="4340" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFE599;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Сохранить информацию&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="4680" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-89" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;&lt;b&gt;DFD — Управление книгами&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="450" x="6800" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-101" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-102">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="7040" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-111" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.465;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-112">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5950" y="1442" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#97D077;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Пользователь &lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="6355" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-91" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;p data-start=&quot;3131&quot; data-end=&quot;3156&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;DFD обязательно содержит:&lt;/font&gt;&lt;/p&gt;&lt;ul data-start=&quot;3157&quot; data-end=&quot;3209&quot;&gt;&lt;li data-section-id=&quot;bwcxm6&quot; data-start=&quot;3157&quot; data-end=&quot;3174&quot;&gt;&lt;font size=&quot;3&quot;&gt;External entity&lt;/font&gt;&lt;/li&gt;&lt;li data-section-id=&quot;n2ot0j&quot; data-start=&quot;3175&quot; data-end=&quot;3184&quot;&gt;&lt;font size=&quot;3&quot;&gt;Process&lt;/font&gt;&lt;/li&gt;&lt;li data-section-id=&quot;3unr47&quot; data-start=&quot;3185&quot; data-end=&quot;3197&quot;&gt;&lt;font size=&quot;3&quot;&gt;Data store&lt;/font&gt;&lt;/li&gt;&lt;li data-section-id=&quot;1uurkay&quot; data-start=&quot;3198&quot; data-end=&quot;3209&quot;&gt;&lt;font size=&quot;3&quot;&gt;Data flow&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="6430" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-98" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-99" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-100" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#97D077;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Управление книгами&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="6365" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-94" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.471;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-116" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#97D077;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Books&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="6165" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#97D077;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Authors&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="6435" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-118" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-115">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="6805" y="1160" />
+              <mxPoint x="6293" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-97" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#97D077;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Publishers&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="200" x="6705" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-104" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFF2CC;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;Добавить/Изменить&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;книгу&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="7014" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-107" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-97">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-105" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFF2CC;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;Добавить/Изменить&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Publisher&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="7400" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-106" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.544;entryY=-0.051;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-110" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-96">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="7960" y="1160" />
+              <mxPoint x="7213" y="1160" />
+              <mxPoint x="7213" y="1345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-108" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#FFF2CC;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&amp;nbsp;Добавить/Изменить&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Author&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="7790" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-109" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.47;entryY=-0.061;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-113" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-140" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-96">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="6230" y="1470" />
+              <mxPoint x="6230" y="1322" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-112" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#CDFFC0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Ввод данных о книге&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="5800" y="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-121" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Paj3os3-LZBra-E93u9Z-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#CDFFC0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Проверка данных&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="6230" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-117" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.64;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#CDFFC0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Сохранение в БД&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="6870" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-124" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="8230" y="1550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-122" parent="1" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fillColor=#CDFFC0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Подтверждение&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="250" x="7490" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-123" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.039;entryY=0.492;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-126" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Makes Changes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="240" x="6960" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-129" parent="1" style="text;whiteSpace=wrap;html=1;rotation=90;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Makes Changes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="240" x="7050" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-130" parent="1" style="text;whiteSpace=wrap;html=1;rotation=90;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Makes Changes&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="240" x="7450" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-131" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Changes in Book&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6820" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-132" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Changes in Publisher&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="200" x="7090" y="1014" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-133" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Changes in Author&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="180" x="6910" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-134" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Check Data&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6165" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-135" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Check Data&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6365" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-136" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Check Data&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6330" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-137" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Data checkes and go to DB&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="240" x="6570" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-138" parent="1" style="text;whiteSpace=wrap;html=1;rotation=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Data checkes and go to DB&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="240" x="7200" y="1520" as="geometry" />
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-139" edge="1" parent="1" source="Paj3os3-LZBra-E93u9Z-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.005;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;" target="Paj3os3-LZBra-E93u9Z-97">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="6180" y="1500" />
+              <mxPoint x="6180" y="1038" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Paj3os3-LZBra-E93u9Z-142" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;ВЫДАЧА КНИГ&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="230" x="8240" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="8Q5JYlAfo4q05HCW7M00-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;cheacks&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="240" x="6057" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="8Q5JYlAfo4q05HCW7M00-2" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;go to books&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="5960" y="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="8Q5JYlAfo4q05HCW7M00-3" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;go to books&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6080" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="8Q5JYlAfo4q05HCW7M00-4" parent="1" style="text;whiteSpace=wrap;html=1;rotation=270;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;go to authors&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="150" x="6135" y="1363" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
