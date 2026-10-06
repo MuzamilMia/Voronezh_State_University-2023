@@ -1,0 +1,155 @@
+BookStore/
+├── BookStore.sln                          # Solution file
+├── README.md                               # Project documentation
+├── .vs/                                    # Visual Studio metadata
+├── packages/                               # NuGet packages directory
+│
+├── 📦 BookStore.BL/                       # Business Logic Layer
+│   ├── BookStore.BL.csproj
+│   ├── Auth/                              # Authentication logic
+│   │   ├── AuthProvider.cs
+│   │   ├── IAuthProvider.cs
+│   │   └── Entities/
+│   ├── Books/                             # Books business logic
+│   │   ├── BooksProvider.cs
+│   │   ├── IBooksManager.cs
+│   │   └── Entities/
+│   ├── bin/
+│   └── obj/
+│
+├── 📦 BookStore.DataAccess/               # Data Access Layer
+│   ├── BookStore.DataAccess.csproj
+│   ├── ApplicationDBContext.cs            # Entity Framework DbContext
+│   ├── Entities/                          # Database entities
+│   │   ├── Book.cs                        # Book entity
+│   │   ├── BookType.cs                    # Book category
+│   │   ├── User.cs                        # User entity
+│   │   ├── UserRole.cs                    # Role entity
+│   │   └── Recipt.cs                      # Receipt entity
+│   ├── Migrations/                        # EF Core migrations
+│   │   ├── 20251211223118_InitialCreate.cs
+│   │   ├── 20251211223118_InitialCreate.Designer.cs
+│   │   ├── 20251212230809_FluentApiConfig.cs
+│   │   ├── 20251212230809_FluentApiConfig.Designer.cs
+│   │   ├── 20251219115907_AddSeedData.cs
+│   │   ├── 20251219115907_AddSeedData.Designer.cs
+│   │   ├── 20251219120545_SeedData.cs
+│   │   ├── 20251219120545_SeedData.Designer.cs
+│   │   └── ApplicationDBContextModelSnapshot.cs
+│   ├── bin/
+│   └── obj/
+│
+├── 📦 BookStore.Service/                  # Web Service Layer (ASP.NET MVC)
+│   ├── BookStore.Service.csproj
+│   ├── BookStore.Service.csproj.user
+│   ├── Program.cs                         # Application startup configuration
+│   ├── appsettings.json                   # Configuration settings
+│   ├── appsettings.Development.json       # Development configuration
+│   ├── Controllers/                       # MVC Controllers
+│   │   ├── AuthController.cs
+│   │   ├── BooksController.cs
+│   │   └── HomeController.cs
+│   ├── Models/                            # View Models
+│   │   └── ErrorViewModel.cs
+│   ├── Views/                             # Razor views
+│   │   ├── Auth/                          # Authentication views
+│   │   ├── Books/                         # Book listing/management views
+│   │   ├── Home/                          # Home page views
+│   │   ├── Shared/                        # Shared layouts and partials
+│   │   ├── _ViewImports.cshtml
+│   │   └── _ViewStart.cshtml
+│   ├── Properties/
+│   │   └── launchSettings.json
+│   ├── wwwroot/                           # Static files (CSS, JS, images)
+│   ├── bin/
+│   └── obj/
+│
+├── 📦 BookStore.UnitTests/                # Unit Tests
+│   ├── BookStore.UnitTests.csproj
+│   ├── BooksProviderTests.cs
+│   ├── bin/
+│   └── obj/
+│
+└── 📦 BookStore.IntegrationTests/         # Integration Tests
+    ├── BookStore.IntegrationTests.csproj
+    ├── BooksApiTests.cs
+    ├── BooksControllerTests.cs
+    ├── bin/
+    └── obj/
+
+src/
+├── main/
+│   ├── java/com/rent/healthbook/
+│   │   ├── HealthBookApplication.java (Main Spring Boot entry point)
+│   │   │
+│   │   ├── consultant/
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── dao/
+│   │   │   ├── dto/
+│   │   │   └── entity/
+│   │   │
+│   │   ├── doctor/
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── dao/
+│   │   │   ├── dto/
+│   │   │   └── entity/
+│   │   │
+│   │   ├── profile/
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── dao/
+│   │   │   ├── dto/
+│   │   │   └── entity/
+│   │   │
+│   │   ├── infoArticles/
+│   │   │   ├── controller/
+│   │   │   ├── service/
+│   │   │   ├── dao/
+│   │   │   ├── dto/
+│   │   │   └── entity/
+│   │   │
+│   │   └── web/
+│   │       ├── OpenAPIConfig.java (Swagger/OpenAPI configuration)
+│   │       ├── exception/
+│   │       ├── globalException/
+│   │       ├── helpers/
+│   │       ├── kafka/
+│   │       └── security/
+│   │
+│   └── resources/
+│       ├── application.yml (Application configuration)
+│       └── liquibase/ (Database migration scripts)
+│
+└── test/
+    └── java/ (Test classes)
+
+gradle/
+└── wrapper/ (Gradle wrapper files)
+
+
+
+
+На 3 (выполнить все критерии)
+Приложение на spring boot
+2 таблицы мин
+подключенный сваггер
+jdbc template + миграции для БД
+API по протоколу REST
+CRUD для сущностей обеих таблицы
+как минимум 1 ручка для поиска сущностей
+
+на 4 (Выполнено хотя бы 3 критерия)
+Spring security и авторизация на ручки
+Пагинация в ручке поиска
+Используется optimistic/pessimistic лок для изменения сущностей
+упаковоно в docker compose
+Написаны юнит или интеграционные тесты
+
+На 5 (3 критерия из предыдущего пункта И)
+Все должно быть упаковано в docker compose
+И
+2 микросервиса взаимодействуют друг с другом через паттерн аутбокс
+Используется взаимодействие по HTTP или через кафку
+Присутствуют итеграционные тесты
